@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/alltheicons-alist
+(defvar all-the-icons-data/mfizz-alist
   '(
     ("3dprint"                . "\xeda4")
     ("alpinelinux"            . "\xeda5")
@@ -139,4 +139,4 @@
     ("x11"                    . "\xee2c")
     ))
 
-(provide 'data-alltheicons)
+(provide 'data-mfizz)

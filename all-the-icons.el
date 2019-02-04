@@ -87,12 +87,19 @@
 (require 'memoize)
 (require 'cl-lib)
 
-(require 'data-alltheicons  "./data/data-alltheicons.el")
+(require 'data-alltheicons  "./data/data-alltheicons.el") ; same as mfizz.
+(require 'data-devicons     "./data/data-devicons.el")
 (require 'data-faicons      "./data/data-faicons.el")
 (require 'data-fileicons    "./data/data-fileicons.el")
-(require 'data-octicons     "./data/data-octicons.el")
-(require 'data-weathericons "./data/data-weathericons.el")
+(require 'data-firacode     "./data/data-firacode.el")
+(require 'data-linea        "./data/data-linea.el")
+(require 'data-linux        "./data/data-linux.el")
 (require 'data-material     "./data/data-material.el")
+(require 'data-mfizz        "./data/data-mfizz.el")
+(require 'data-octicons     "./data/data-octicons.el")
+(require 'data-pomodolo     "./data/data-pomodolo.el")
+(require 'data-powerline    "./data/data-pomodolo.el")
+(require 'data-weathericons "./data/data-weathericons.el")
 
 (require 'all-the-icons-faces)
 
@@ -172,7 +179,7 @@
     ;; ;; AWS
     ("^stack.*.json$"   all-the-icons-alltheicon "aws"                  :face all-the-icons-orange)
 
-    
+
     ("^serverless\\.yml$" all-the-icons-faicon "bolt"                   :v-adjust 0.0 :face all-the-icons-yellow)
     ("\\.[jc]son$"      all-the-icons-octicon "settings"                :v-adjust 0.0 :face all-the-icons-yellow)
     ("\\.ya?ml$"        all-the-icons-octicon "settings"                :v-adjust 0.0 :face all-the-icons-dyellow)
@@ -362,7 +369,8 @@
     ("^\\*new-tab\\*$"  all-the-icons-material "star"                     :face all-the-icons-cyan)
 
     ("^\\."             all-the-icons-octicon "gear"                    :v-adjust 0.0)
-    ("."                all-the-icons-faicon "file-o"                   :height 0.8 :v-adjust 0.0 :face all-the-icons-dsilver)))
+    ("."                all-the-icons-faicon "file-o"                   :height 0.8 :v-adjust 0.0 :face all-the-icons-dsilver)
+    ))
 
 (defvar all-the-icons-dir-icon-alist
   '(
@@ -822,11 +830,18 @@ FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
        (all-the-icons-insert arg (quote ,name)))))
 
 (define-icon alltheicon all-the-icons-data/alltheicons-alist    "all-the-icons")
-(define-icon fileicon   all-the-icons-data/file-icon-alist      "file-icons")
+(define-icon devicon    all-the-icons-data/devicons-alist       "devicons")
 (define-icon faicon     all-the-icons-data/fa-icon-alist        "FontAwesome")
-(define-icon octicon    all-the-icons-data/octicons-alist       "github-octicons" "octicons")
-(define-icon wicon      all-the-icons-data/weather-icons-alist  "Weather Icons"   "weathericons")
+(define-icon fileicon   all-the-icons-data/file-icon-alist      "file-icons")
+(define-icon fracode    all-the-icons-data/firacode-alist       "firacode")
+(define-icon linea      all-the-icons-data/linea-alist          "linea-icons")
+(define-icon linux      all-the-icons-data/linux-alist          "linux-icons")
 (define-icon material   all-the-icons-data/material-icons-alist "Material Icons"  "material-design-icons")
+(define-icon mfizz      all-the-icons-data/mfizz-alist          "Mfizz Icons")
+(define-icon octicon    all-the-icons-data/octicons-alist       "github-octicons" "octicons")
+(define-icon pomodolo   all-the-icons-data/pomodolo-alist       "pomodolo")
+(define-icon powerline  all-the-icons-data/powerline-alist       "powerline")
+(define-icon wicon      all-the-icons-data/weather-icons-alist  "Weather Icons"   "weathericons")
 
 (provide 'all-the-icons)
 
