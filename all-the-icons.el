@@ -98,7 +98,7 @@
 (require 'data-mfizz        "./data/data-mfizz.el")
 (require 'data-octicons     "./data/data-octicons.el")
 (require 'data-pomodolo     "./data/data-pomodolo.el")
-(require 'data-powerline    "./data/data-pomodolo.el")
+(require 'data-powerline    "./data/data-powerline.el")
 (require 'data-weathericons "./data/data-weathericons.el")
 
 (require 'all-the-icons-faces)
@@ -840,7 +840,7 @@ FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
 (define-icon mfizz      all-the-icons-data/mfizz-alist          "Mfizz Icons")
 (define-icon octicon    all-the-icons-data/octicons-alist       "github-octicons" "octicons")
 (define-icon pomodolo   all-the-icons-data/pomodolo-alist       "pomodolo")
-(define-icon powerline  all-the-icons-data/powerline-alist       "powerline")
+(define-icon powerline  all-the-icons-data/powerline-alist      "powerline")
 (define-icon wicon      all-the-icons-data/weather-icons-alist  "Weather Icons"   "weathericons")
 
 (provide 'all-the-icons)
