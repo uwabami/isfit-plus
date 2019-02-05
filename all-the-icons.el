@@ -1,70 +1,81 @@
 ;;; all-the-icons.el --- A library for inserting Developer icons
-
+;;
 ;; Copyright (C) 2016  Dominic Charlesworth <dgc336@gmail.com>
-
+;;               2019 Youhei SASAKI<uwabami@gfd-dennou.org>
+;;
 ;; Author: Dominic Charlesworth <dgc336@gmail.com>
 ;; Version: 3.1.4
 ;; Package-Requires: ((emacs "24.3") (memoize "1.0.1"))
 ;; URL: https://github.com/domtronn/all-the-icons.el
 ;; Keywords: convenient, lisp
-
+;;
+;; Original Version: https://github.com/domtronn/all-the-icons.el
+;;                    by Dominic Charlesworth <dgc336@gmail.com>
+;;
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
 ;; as published by the Free Software Foundation; either version 3
 ;; of the License, or (at your option) any later version.
-
+;;
 ;; This program is distributed in the hope that it will be useful,
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;; GNU General Public License for more details.
-
+;;
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
-
+;;
 ;;; Commentary:
-
+;;
 ;; This package is a utility for using and formatting various Icon
 ;; fonts within Emacs.  Icon Fonts allow you to propertize and format
 ;; icons the same way you would normal text.  This enables things such
 ;; as better scaling of and anti aliasing of the icons.
-
+;;
 ;; This package was inspired by
-
+;;
 ;; - `mode-icons' for Emacs, found at https://github.com/ryuslash/mode-icons
 ;; - `file-icons' for Atom, found at https://atom.io/packages/file-icons
-
+;;
 ;; Currently, this package provides an interface to the following Icon Fonts
-
-;; - Atom File Icons,       found at https://atom.io/packages/file-icons
-;; - FontAwesome Icons,     found at http://fontawesome.io/
-;; - GitHub Octicons,       found at http://octicons.github.com
-;; - Material Design Icons, found at http://google.github.io/material-design-icons/
-;; - Weather Icons,         found at https://erikflowers.github.io/weather-icons/
-;; - AllTheIcons,           a custom Icon Font maintained as part of this package
-
-;; Requests for new icons will be accepted and added to the AllTheIcons Icon Font
-
+;; through `icons-in-terminal` fonts.
+;;
+;; - Devicons                https://github.com/vorillaz/devicons
+;; - FiraCode                https://github.com/tonsky/FiraCode
+;; - Pomicons                https://github.com/gabrielelana/pomicons
+;; - file-icons              https://atom.io/packages/file-icons
+;; - font-linux              https://github.com/Lukas-W/font-linux
+;; - font-mfizz              https://github.com/fizzed/font-mfizz
+;; - fontawesome             http://fontawesome.io/
+;; - linea                   http://linea.io/
+;; - material-design-icons   https://github.com/google/material-design-icons
+;; - octicons                https://octicons.github.com/
+;; - powerline-extra-symbols https://github.com/ryanoasis/powerline-extra-symbols
+;; - weather-icons           https://erikflowers.github.io/weather-icons/
+;;
+;; and the original `AllTheIcons' is just aliases font-mfizz.
+;;
 ;;; Usage:
-
+;;
 ;; The simplest usage for this package is to use the following functions;
-
+;;
 ;;   `all-the-icons-icon-for-buffer'
 ;;   `all-the-icons-icon-for-file'
 ;;   `all-the-icons-icon-for-mode'
-
+;;
 ;; Which can be used to get a formatted icon for the current buffer, a
 ;; file name or a major mode respectively.  e.g.
-
+;;
 ;;   (insert (all-the-icons-icon-for-file "foo.js"))
-
+;;
 ;; Inserts a JavaScript icon formatted like this
-
+;;
 ;;   #("some-icon" 0 1 (display (raise -0.24)
 ;;              face (:family "dev-icons" :height 1.08 :foreground "#FFD446")))
-
+;;
 ;; You can also insert icons directly using the individual icon family
 ;; functions
-
+;;
 ;;   `all-the-icons-alltheicon'     // Custom font with fewest icons
 ;;   `all-the-icons-devicon'        // Developer Icons
 ;;   `all-the-icons-faicon'         // Font Awesome Icons
@@ -72,21 +83,20 @@
 ;;   `all-the-icons-octicon'        // GitHub Octicons
 ;;   `all-the-icons-material'       // Material Design Icons
 ;;   `all-the-icons-wicon'          // Weather Icons
-
+;;
 ;; You can call these functions with the icon name you want to insert, e.g.
-
+;;
 ;;   (all-the-icons-octicon "file-binary")  // GitHub Octicon for Binary File
 ;;   (all-the-icons-faicon  "cogs")         // FontAwesome icon for cogs
 ;;   (all-the-icons-wicon   "tornado")      // Weather Icon for tornado
-
+;;
 ;; A list of all the icon names for the different font families can be
 ;; found in the data directory, or by inspecting the alist variables.
 ;; All the alist variables are prefixed with `all-the-icons-data/'
-
+;;
 ;;; Code:
 (require 'memoize)
 (require 'cl-lib)
-
 (require 'data-alltheicons  "./data/data-alltheicons.el") ; same as mfizz.
 (require 'data-devicons     "./data/data-devicons.el")
 (require 'data-faicons      "./data/data-faicons.el")
@@ -97,10 +107,9 @@
 (require 'data-material     "./data/data-material.el")
 (require 'data-mfizz        "./data/data-mfizz.el")
 (require 'data-octicons     "./data/data-octicons.el")
-(require 'data-pomodolo     "./data/data-pomodolo.el")
+(require 'data-pomodoro     "./data/data-pomodoro.el")
 (require 'data-powerline    "./data/data-powerline.el")
 (require 'data-weathericons "./data/data-weathericons.el")
-
 (require 'all-the-icons-faces)
 
 ;;; Custom Variables
@@ -724,35 +733,6 @@ If SHOW-FAMILY is non-nil, displays the icons family in the candidate string."
      data)))
 
 ;;;###autoload
-(defun all-the-icons-install-fonts (&optional pfx)
-  "Helper function to download and install the latests fonts based on OS.
-When PFX is non-nil, ignore the prompt and just install"
-  (interactive "P")
-  (when (or pfx (yes-or-no-p "This will download and install fonts, are you sure you want to do this?"))
-    (let* ((url-format "https://github.com/domtronn/all-the-icons.el/blob/master/fonts/%s?raw=true")
-           (font-dest (cl-case window-system
-                        (x  (concat (or (getenv "XDG_DATA_HOME")            ;; Default Linux install directories
-                                        (concat (getenv "HOME") "/.local/share"))
-                                    "/fonts/"))
-                        (mac (concat (getenv "HOME") "/Library/Fonts/" ))
-                        (ns (concat (getenv "HOME") "/Library/Fonts/" ))))  ;; Default MacOS install directory
-           (known-dest? (stringp font-dest))
-           (font-dest (or font-dest (read-directory-name "Font installation directory: " "~/"))))
-
-      (unless (file-directory-p font-dest) (mkdir font-dest t))
-
-      (mapc (lambda (font)
-              (url-copy-file (format url-format font) (expand-file-name font font-dest) t))
-            all-the-icons-font-names)
-      (when known-dest?
-        (message "Fonts downloaded, updating font cache... <fc-cache -f -v> ")
-        (shell-command-to-string (format "fc-cache -f -v")))
-      (message "%s Successfully %s `all-the-icons' fonts to `%s'!"
-               (all-the-icons-wicon "stars" :v-adjust 0.0)
-               (if known-dest? "installed" "downloaded")
-               font-dest))))
-
-;;;###autoload
 (defun all-the-icons-insert (&optional arg family)
   "Interactive icon insertion function.
 When Prefix ARG is non-nil, insert the propertized icon.
@@ -839,7 +819,7 @@ FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
 (define-icon material   all-the-icons-data/material-icons-alist "Material Icons"  "material-design-icons")
 (define-icon mfizz      all-the-icons-data/mfizz-alist          "Mfizz Icons")
 (define-icon octicon    all-the-icons-data/octicons-alist       "github-octicons" "octicons")
-(define-icon pomodolo   all-the-icons-data/pomodolo-alist       "pomodolo")
+(define-icon pomodoro   all-the-icons-data/pomodoro-alist       "pomodoro")
 (define-icon powerline  all-the-icons-data/powerline-alist      "powerline")
 (define-icon wicon      all-the-icons-data/weather-icons-alist  "Weather Icons"   "weathericons")
 

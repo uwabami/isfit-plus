@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/pomodolo-alist
+(defvar all-the-icons-data/pomodoro-alist
   '(
     ("pom-clean-code"            . "\xeacd")
     ("pom-pomodoro-done"         . "\xeace")
@@ -13,4 +13,4 @@
     ("pom-external-interruption" . "\xead7")
     ))
 
-(provide 'data-pomodolo)
+(provide 'data-pomodoro)

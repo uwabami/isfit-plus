@@ -1,28 +1,32 @@
 ;;; all-the-icons-faces.el --- A module of faces for all-the-icons
-
-;; Copyright (C) 2016  Dominic Charlesworth <dgc336@gmail.com>
-
+;;
+;; Copyright (C) 2016 Dominic Charlesworth <dgc336@gmail.com>
+;;               2019 Youhei SASAKI<uwabami@gfd-dennou.org>
+;;
 ;; Author: Dominic Charlesworth <dgc336@gmail.com>
 ;; Version: 1.0.0
 ;; Package-Requires: ((emacs "24.3"))
-;; URL: https://github.com/domtronn/all-the-icons.el
+;; URL: https://github.com/uwabami/all-the-icons-in-terminal
 ;; Keywords: convenient, lisp
-
+;;
+;; Original Version: https://github.com/domtronn/all-the-icons.el
+;;                    by Dominic Charlesworth <dgc336@gmail.com>
+;;
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
 ;; as published by the Free Software Foundation; either version 3
 ;; of the License, or (at your option) any later version.
-
+;;
 ;; This program is distributed in the hope that it will be useful,
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;; GNU General Public License for more details.
-
+;;
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
-
+;;
 ;;; Commentary:
-
+;;
 ;; This file contains all of the faces used by the package for
 ;; colouring icons
 
@@ -33,7 +37,6 @@
   :prefix "all-the-icons-"
   :group 'tools
   :group 'all-the-icons)
-
 
 ;; red
 (defface all-the-icons-red
