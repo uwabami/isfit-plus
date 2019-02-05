@@ -147,6 +147,7 @@
     ("elm"           . "\xe8e6")
     ("em"            . "\xe7cb")
     ("emacs"         . "\xe789")
+    ("elisp"         . "\xe789") ;; same as emacs
     ("ember"         . "\xe75a")
     ("eq"            . "\xe86d")
     ("esdoc"         . "\xe8bf")
