@@ -159,16 +159,14 @@
     ("wordpress"              . "\xee2b")
     ("x11"                    . "\xee2c")
     ;;
-    ("battery-charging"       . "\xeba7") ;; linea
-    ;; powerline symbols
-    ( "arrow-left"            . "\xe0b0" )
-    ( "arrow-right"           . "\xe0b2" )
-    ( "cup-left"              . "\xe0b6" )
-    ( "cup-right"             . "\xe0b4" )
-    ( "slant-left"            . "\xe0bc" )
-    ( "slant-right"           . "\xe0be" )
-    ( "wave-left"             . "\xe0c8" )  ;; different
-    ( "wave-right"            . "\xe0ca" )  ;; different
+    ("battery-charging"       . "\xe60e")   ;; md
+    ("arrow-left"             . "\xe0b0" )  ;; powerline symbols
+    ("arrow-right"            . "\xe0b2" )  ;; powerline symbols
+    ("cup-left"               . "\xe0b6" )  ;; powerline symbols
+    ("cup-right"              . "\xe0b4" )  ;; powerline symbols
+    ("slant-left"             . "\xe0bc" )  ;; powerline symbols
+    ("slant-right"            . "\xe0be" )  ;; powerline symbols
+    ("wave-left"              . "\xe9fd" )  ;; myicons_0009
+    ("wave-right"             . "\xe9fa" )  ;; myicons_0006
     ))
-
 (provide 'data-alltheicons)
