@@ -24,6 +24,7 @@
     ("codeigniter"            . "\xedb5")
     ("codepen"                . "\xedb6")
     ("coffee-bean"            . "\xedb7")
+    ("coffeescript"           . "\xea58") ;; devicons
     ("cplusplus"              . "\xedb8")
     ("cplusplus-line"         . "\xedb8") ;; same as cplusplus-line
     ("csharp"                 . "\xedb9")
@@ -152,6 +153,7 @@
     ("swift"                  . "\xea5c") ;; devicons
     ("symfony"                . "\xee26")
     ("terminal"               . "\xea9c") ;; devicons
+    ("terminal-alt"           . "\xea9c") ;; same as terminal
     ("tomcat"                 . "\xee27")
     ("ubuntu"                 . "\xee28")
     ("unity"                  . "\xee29")

@@ -1,4 +1,29 @@
 (defvar all-the-icons-data/fa-icon-alist
+  ;; -car
+  ;; -files-o
+  ;; -gratipay
+  ;; -hand-rock-o
+  ;; -jpy
+  ;; -life-ring
+  ;; -link
+  ;; -outdent
+  ;; -pencil-square-o
+  ;; -picture-o
+  ;; -rebel
+  ;; -rss
+  ;; -rub
+  ;; -scissors
+  ;; -share
+  ;; -star-half-o
+  ;; -tachometer
+  ;; -taxi
+  ;; -times
+  ;; -transgender
+  ;; -undo
+  ;; -university
+  ;; -usd
+  ;; -users
+  ;; -weixin
   '(
     ("500px"                               . "\xe31d")
     ("address-book"                        . "\xe363")
@@ -28,10 +53,6 @@
     ("apple"                               . "\xe237")
     ("archive"                             . "\xe244")
     ("area-chart"                          . "\xe2b4")
-    ("arrows"                              . "\xe124")
-    ("arrows-alt"                          . "\xe188")
-    ("arrows-h"                            . "\xe158")
-    ("arrows-v"                            . "\xe157")
     ("arrow-circle-down"                   . "\xe182")
     ("arrow-circle-left"                   . "\xe17f")
     ("arrow-circle-o-down"                 . "\xe0fa")
@@ -44,6 +65,10 @@
     ("arrow-left"                          . "\xe13b")
     ("arrow-right"                         . "\xe13c")
     ("arrow-up"                            . "\xe13d")
+    ("arrows"                              . "\xe124")
+    ("arrows-alt"                          . "\xe188")
+    ("arrows-h"                            . "\xe158")
+    ("arrows-v"                            . "\xe157")
     ("assistive-listening-systems"         . "\xe34d")
     ("asterisk"                            . "\xe144")
     ("at"                                  . "\xe2b0")
@@ -54,15 +79,20 @@
     ("ban"                                 . "\xe13a")
     ("bandcamp"                            . "\xe37d")
     ("bank"                                . "\xe258")
+    ("bar-chart"                           . "\xe159")
     ("barcode"                             . "\xe108")
     ("bars"                                . "\xe192")
-    ("bar-chart"                           . "\xe159")
     ("bath"                                . "\xe376")
     ("battery"                             . "\xe2f1")
     ("battery-0"                           . "\xe2f5")
     ("battery-1"                           . "\xe2f4")
     ("battery-2"                           . "\xe2f3")
     ("battery-3"                           . "\xe2f2")
+    ("battery-empty"                       . "\xe2f5") ; same as battery-0
+    ("battery-full"                        . "\xe2f1") ; same as battery
+    ("battery-half"                        . "\xe2f3") ; same as battery-2
+    ("battery-quarter"                     . "\xe2f4") ; same as battery-1
+    ("battery-three-quarters"              . "\xe2f2") ; same as battery-3
     ("bed"                                 . "\xe2e8")
     ("beer"                                . "\xe1c2")
     ("behance"                             . "\xe26e")
@@ -89,6 +119,7 @@
     ("bookmark-o"                          . "\xe16f")
     ("braille"                             . "\xe34c")
     ("briefcase"                           . "\xe187")
+    ("btc"                                 . "\xe21a") ; same as bitcoin
     ("bug"                                 . "\xe245")
     ("building"                            . "\xe268")
     ("building-o"                          . "\xe1bd")
@@ -156,8 +187,8 @@
     ("cloud-upload"                        . "\xe1b5")
     ("cny"                                 . "\xe217")
     ("code"                                . "\xe1e4")
-    ("codepen"                             . "\xe284")
     ("code-fork"                           . "\xe1e9")
+    ("codepen"                             . "\xe284")
     ("codiepie"                            . "\xe331")
     ("coffee"                              . "\xe1ba")
     ("cog"                                 . "\xe0f3")
@@ -165,11 +196,11 @@
     ("collapse-alt"                        . "\xe1db")
     ("columns"                             . "\xe1a3")
     ("comment"                             . "\xe14f")
+    ("comment-o"                           . "\xe1ac")
     ("commenting"                          . "\xe328")
     ("commenting-o"                        . "\xe329")
     ("comments"                            . "\xe15f")
     ("comments-o"                          . "\xe1ad")
-    ("comment-o"                           . "\xe1ac")
     ("compass"                             . "\xe20f")
     ("compress"                            . "\xe141")
     ("connectdevelop"                      . "\xe2c3")
@@ -230,8 +261,8 @@
     ("external-link"                       . "\xe167")
     ("external-link-square"                . "\xe20d")
     ("eye"                                 . "\xe149")
-    ("eyedropper"                          . "\xe2b1")
     ("eye-slash"                           . "\xe14a")
+    ("eyedropper"                          . "\xe2b1")
     ("fa"                                  . "\xe35e")
     ("facebook"                            . "\xe172")
     ("facebook-official"                   . "\xe2e2")
@@ -254,12 +285,13 @@
     ("file-powerpoint-o"                   . "\xe27d")
     ("file-text"                           . "\xe21c")
     ("file-text-o"                         . "\xe1bc")
+    ("file-video-o"                        . "\xe281") ; same as file-movie-o
     ("file-word-o"                         . "\xe27b")
     ("film"                                . "\xe0e9")
     ("filter"                              . "\xe186")
     ("fire"                                . "\xe148")
-    ("firefox"                             . "\xe318")
     ("fire-extinguisher"                   . "\xe1f6")
+    ("firefox"                             . "\xe318")
     ("first-order"                         . "\xe35a")
     ("flag"                                . "\xe102")
     ("flag-checkered"                      . "\xe1e2")
@@ -272,8 +304,8 @@
     ("folder-open"                         . "\xe156")
     ("folder-open-o"                       . "\xe1d9")
     ("font"                                . "\xe10f")
+    ("font-awesome"                        . "\xe333")
     ("fonticons"                           . "\xe32d")
-    ("fort-awesome"                        . "\xe333")
     ("forumbee"                            . "\xe2c5")
     ("forward"                             . "\xe12b")
     ("foursquare"                          . "\xe23d")
@@ -289,12 +321,12 @@
     ("gg-circle"                           . "\xe310")
     ("gift"                                . "\xe146")
     ("git"                                 . "\xe28b")
+    ("git-square"                          . "\xe28a")
     ("github"                              . "\xe173")
     ("github-alt"                          . "\xe1d7")
     ("github-square"                       . "\xe16a")
     ("gitlab"                              . "\xe342")
     ("gittip"                              . "\xe241")
-    ("git-square"                          . "\xe28a")
     ("glass"                               . "\xe0e1")
     ("glide"                               . "\xe350")
     ("glide-g"                             . "\xe351")
@@ -302,13 +334,14 @@
     ("google"                              . "\xe25b")
     ("google-plus"                         . "\xe19d")
     ("google-plus-circle"                  . "\xe35d")
+    ("google-plus-offical"                 . "\xe19d") ; same as google-plus
     ("google-plus-square"                  . "\xe19c")
     ("google-wallet"                       . "\xe2a5")
     ("graduation-cap"                      . "\xe259")
     ("grav"                                . "\xe37e")
     ("group"                               . "\xe189")
+    ("h-square"                            . "\xe1c3")
     ("hacker-news"                         . "\xe28c")
-    ("handshake-o"                         . "\xe35f")
     ("hand-grab-o"                         . "\xe305")
     ("hand-lizard-o"                       . "\xe308")
     ("hand-o-down"                         . "\xe17e")
@@ -320,13 +353,14 @@
     ("hand-pointer-o"                      . "\xe30a")
     ("hand-scissors-o"                     . "\xe307")
     ("hand-spock-o"                        . "\xe309")
+    ("handshake-o"                         . "\xe35f")
     ("hashtag"                             . "\xe33e")
     ("hdd-o"                               . "\xe177")
     ("header"                              . "\xe294")
     ("headphones"                          . "\xe103")
     ("heart"                               . "\xe0e5")
-    ("heartbeat"                           . "\xe2d2")
     ("heart-o"                             . "\xe163")
+    ("heartbeat"                           . "\xe2d2")
     ("history"                             . "\xe292")
     ("home"                                . "\xe0f5")
     ("hospital-o"                          . "\xe1be")
@@ -334,10 +368,13 @@
     ("hourglass-1"                         . "\xe301")
     ("hourglass-2"                         . "\xe302")
     ("hourglass-3"                         . "\xe303")
+    ("hourglass-end"                       . "\xe303") ; same as hourglass-3
+    ("hourglass-half"                      . "\xe302") ; same as hourglass-2
     ("hourglass-o"                         . "\xe300")
+    ("hourglass-start"                     . "\xe301") ; same as hourglass-1
     ("houzz"                               . "\xe32a")
     ("html5"                               . "\xe1fd")
-    ("h-square"                            . "\xe1c3")
+    ("i-cursor"                            . "\xe2f7")
     ("id-badge"                            . "\xe36a")
     ("ils"                                 . "\xe2c0")
     ("image"                               . "\xe11c")
@@ -353,7 +390,6 @@
     ("intersex"                            . "\xe2d6")
     ("ioxhost"                             . "\xe2bd")
     ("italic"                              . "\xe111")
-    ("i-cursor"                            . "\xe2f7")
     ("joomla"                              . "\xe265")
     ("jsfiddle"                            . "\xe285")
     ("key"                                 . "\xe15d")
@@ -436,9 +472,9 @@
     ("optin-monster"                       . "\xe2ee")
     ("pagelines"                           . "\xe249")
     ("paint-brush"                         . "\xe2b2")
-    ("paperclip"                           . "\xe18f")
     ("paper-plane"                         . "\xe290")
     ("paper-plane-o"                       . "\xe291")
+    ("paperclip"                           . "\xe18f")
     ("paragraph"                           . "\xe295")
     ("pause"                               . "\xe129")
     ("pause-circle"                        . "\xe338")
@@ -450,10 +486,10 @@
     ("percent"                             . "\xe341")
     ("phone"                               . "\xe16d")
     ("phone-square"                        . "\xe170")
+    ("pie-chart"                           . "\xe2b5")
     ("pied-piper"                          . "\xe359")
     ("pied-piper-alt"                      . "\xe263")
     ("pied-piper-pp"                       . "\xe262")
-    ("pie-chart"                           . "\xe2b5")
     ("pinterest"                           . "\xe19a")
     ("pinterest-p"                         . "\xe2e3")
     ("pinterest-square"                    . "\xe19b")
@@ -490,6 +526,8 @@
     ("registered"                          . "\xe30d")
     ("renren"                              . "\xe248")
     ("repeat"                              . "\xe0fe")
+    ("reply"                               . "\xe1d6") ; same as mail-reply
+    ("reply-all"                           . "\xe1e5") ; same as mail-reply-all
     ("retweet"                             . "\xe153")
     ("road"                                . "\xe0f8")
     ("rocket"                              . "\xe1f7")
@@ -514,10 +552,10 @@
     ("shopping-basket"                     . "\xe33d")
     ("shopping-cart"                       . "\xe154")
     ("shower"                              . "\xe375")
-    ("signal"                              . "\xe0f2")
     ("sign-in"                             . "\xe168")
     ("sign-language"                       . "\xe352")
     ("sign-out"                            . "\xe164")
+    ("signal"                              . "\xe0f2")
     ("simplybuilt"                         . "\xe2c9")
     ("sitemap"                             . "\xe1af")
     ("skyatlas"                            . "\xe2ca")
@@ -584,19 +622,19 @@
     ("text-height"                         . "\xe112")
     ("text-width"                          . "\xe113")
     ("th"                                  . "\xe0eb")
+    ("th-large"                            . "\xe0ea")
+    ("th-list"                             . "\xe0ec")
     ("themeisle"                           . "\xe35c")
     ("thermometer"                         . "\xe370")
     ("thermometer-0"                       . "\xe374")
     ("thermometer-1"                       . "\xe373")
     ("thermometer-2"                       . "\xe372")
     ("thermometer-3"                       . "\xe371")
+    ("thumb-tack"                          . "\xe166")
     ("thumbs-down"                         . "\xe224")
     ("thumbs-o-down"                       . "\xe161")
     ("thumbs-o-up"                         . "\xe160")
     ("thumbs-up"                           . "\xe223")
-    ("thumb-tack"                          . "\xe166")
-    ("th-large"                            . "\xe0ea")
-    ("th-list"                             . "\xe0ec")
     ("ticket"                              . "\xe206")
     ("times-circle"                        . "\xe133")
     ("times-circle-o"                      . "\xe138")
@@ -659,10 +697,10 @@
     ("wheelchair-alt"                      . "\xe347")
     ("wifi"                                . "\xe2a2")
     ("wikipedia-w"                         . "\xe315")
-    ("windows"                             . "\xe238")
     ("window-maximize"                     . "\xe378")
     ("window-minimize"                     . "\xe379")
     ("window-restore"                      . "\xe37a")
+    ("windows"                             . "\xe238")
     ("wordpress"                           . "\xe256")
     ("wpbeginner"                          . "\xe343")
     ("wpexplorer"                          . "\xe386")
@@ -670,13 +708,13 @@
     ("wrench"                              . "\xe184")
     ("xing"                                . "\xe227")
     ("xing-square"                         . "\xe228")
+    ("y-combinator"                        . "\xe2ed")
     ("yahoo"                               . "\xe25a")
     ("yelp"                                . "\xe2a0")
     ("yoast"                               . "\xe35b")
     ("youtube"                             . "\xe226")
     ("youtube-play"                        . "\xe229")
     ("youtube-square"                      . "\xe225")
-    ("y-combinator"                        . "\xe2ed")
     ))
 
 (provide 'data-faicons)
