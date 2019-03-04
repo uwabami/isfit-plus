@@ -4,7 +4,7 @@
 ;;               2019 Youhei SASAKI<uwabami@gfd-dennou.org>
 ;;
 ;; Author: Dominic Charlesworth <dgc336@gmail.com>
-;; Version: 1.0.0
+;; Version: 20190303
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/uwabami/all-the-icons-in-terminal
 ;; Keywords: convenient, lisp

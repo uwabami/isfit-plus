@@ -4,7 +4,7 @@
 ;;               2019 Youhei SASAKI<uwabami@gfd-dennou.org>
 ;;
 ;; Author: Dominic Charlesworth <dgc336@gmail.com>
-;; Version: 3.1.4
+;; Version: 20190303
 ;; Package-Requires: ((emacs "24.3") (memoize "1.0.1"))
 ;; URL: https://github.com/domtronn/all-the-icons.el
 ;; Keywords: convenient, lisp
