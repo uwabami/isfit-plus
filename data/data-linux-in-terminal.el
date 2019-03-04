@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/linux-alist
+(defvar all-the-icons-in-terminal-data/linux-alist
   '(
     ("archlinux"         . "\xe9d9")
     ("centos"            . "\xe9da")
@@ -30,4 +30,4 @@
     ("alpine"            . "\xe9f4")
     ))
 
-(provide 'data-linux)
+(provide 'data-linux-in-terminal)

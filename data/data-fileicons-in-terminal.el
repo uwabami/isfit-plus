@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/file-icon-alist
+(defvar all-the-icons-in-terminal-data/file-icon-alist
   '(
     ("1c"            . "\xe754")
     ("1c-alt"        . "\xe88b")
@@ -469,4 +469,4 @@
     )
   )
 
-(provide 'data-fileicons)
+(provide 'data-fileicons-in-terminal)

@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/pomodoro-alist
+(defvar all-the-icons-in-terminal-data/pomodoro-alist
   '(
     ("pom-clean-code"            . "\xeacd")
     ("pom-pomodoro-done"         . "\xeace")
@@ -13,4 +13,4 @@
     ("pom-external-interruption" . "\xead7")
     ))
 
-(provide 'data-pomodoro)
+(provide 'data-pomodoro-in-terminal)

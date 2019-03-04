@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/devicons-alist
+(defvar all-the-icons-in-terminal-data/devicons-alist
   '(
     ("android"               . "\xea15")
     ("angular"               . "\xea5a")
@@ -200,4 +200,4 @@
     ("zend"                  . "\xea7f")
     ))
 
-(provide 'data-devicons)
+(provide 'data-devicons-in-terminal)

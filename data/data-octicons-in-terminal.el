@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/octicons-alist
+(defvar all-the-icons-in-terminal-data/octicons-alist
   '(
     ("alert"                  . "\xe023")
     ("arrow-down"             . "\xe035")
@@ -174,4 +174,4 @@
     ("zap"                    . "\xe001")
     ))
 
-(provide 'data-octicons)
+(provide 'data-octicons-in-terminal)

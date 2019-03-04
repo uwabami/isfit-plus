@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/firacode-alist
+(defvar all-the-icons-in-terminal-data/firacode-alist
   '(
     ("firacode-asterisk"                   . "\xee2d")
     ("firacode-plus"                       . "\xee2e")
@@ -118,4 +118,4 @@
     ("firacode-nameme-1114119"             . "\xeea0")
     ))
 
-(provide 'data-firacode)
+(provide 'data-firacode-in-terminal)

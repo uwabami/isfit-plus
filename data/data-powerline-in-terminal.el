@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/powerline-alist
+(defvar all-the-icons-in-terminal-data/powerline-alist
   '(
     ("powerline-branch"                                 . "\xe0a0")
     ("powerline-line-number"                            . "\xe0a1")
@@ -40,4 +40,4 @@
     ("powerline-extra-trapezoid-top-bottom-mirrored"    . "\xe0d4")
     ))
 
-(provide 'data-powerline)
+(provide 'data-powerline-in-terminal)

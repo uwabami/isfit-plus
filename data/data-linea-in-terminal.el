@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/linea-alist
+(defvar all-the-icons-in-terminal-data/linea-alist
   '(
     ("linea-arrows-anticlockwise"                  . "\xead8")
     ("linea-arrows-anticlockwise-dashed"           . "\xead9")
@@ -718,4 +718,4 @@
     ("linea-weather-windgust"                      . "\xeda3")
     ))
 
-(provide 'data-linea)
+(provide 'data-linea-in-terminal)

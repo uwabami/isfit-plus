@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/fa-icon-alist
+(defvar all-the-icons-in-terminal-data/fa-icon-alist
   ;; -car
   ;; -files-o
   ;; -gratipay
@@ -717,4 +717,4 @@
     ("youtube-square"                      . "\xe225")
     ))
 
-(provide 'data-faicons)
+(provide 'data-faicons-in-terminal)

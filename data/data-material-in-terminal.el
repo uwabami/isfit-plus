@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/material-icons-alist
+(defvar all-the-icons-in-terminal-data/material-icons-alist
   '(
     ("3d-rotation"                                 . "\xe642")
     ("accessibility"                               . "\xe643")
@@ -935,4 +935,4 @@
     ("zoom-out-map"                                . "\xe5bf")
     )
   )
-(provide 'data-material)
+(provide 'data-material-in-terminal)

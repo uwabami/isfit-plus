@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/alltheicons-alist
+(defvar all-the-icons-in-terminal-data/alltheicons-alist
   '(
     ("apache"            . "\xeea7")
     ("atom"              . "\xeeb5")
@@ -65,4 +65,4 @@
     ("wave-left"         . "\xeede")
     ("wave-right"        . "\xeedf")
     ))
-(provide 'data-alltheicons)
+(provide 'data-alltheicons-in-terminal)

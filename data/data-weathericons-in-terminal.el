@@ -1,4 +1,4 @@
-(defvar all-the-icons-data/weather-icons-alist
+(defvar all-the-icons-in-terminal-data/weather-icons-alist
   '(
     ("alien"                       . "\xe963")
     ("barometer"                   . "\xe967")
@@ -230,4 +230,4 @@
     ("windy"                       . "\xe913")
     ))
 
-(provide 'data-weathericons)
+(provide 'data-weathericons-in-terminal)
