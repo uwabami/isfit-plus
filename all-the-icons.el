@@ -32,14 +32,15 @@
 ;; icons the same way you would normal text.  This enables things such
 ;; as better scaling of and anti aliasing of the icons.
 ;;
-;; This package was inspired by
+;; This package was derived from all-the-icons.el
+;; https://github.com/domtronn/all-the-icons.el
+;; by Dominic Charlesworth <dgc336@gmail.com>
 ;;
-;; - `mode-icons' for Emacs, found at https://github.com/ryuslash/mode-icons
-;; - `file-icons' for Atom, found at https://atom.io/packages/file-icons
-;;
+;; Original functions are same, but use other font.
 ;; Currently, this package provides an interface to the following Icon Fonts
-;; through `icons-in-terminal` fonts.
+;; through folk version of `icons-in-terminal` fonts.
 ;;
+
 ;; - Devicons                https://github.com/vorillaz/devicons
 ;; - FiraCode                https://github.com/tonsky/FiraCode
 ;; - Pomicons                https://github.com/gabrielelana/pomicons
@@ -52,10 +53,11 @@
 ;; - octicons                https://octicons.github.com/
 ;; - powerline-extra-symbols https://github.com/ryanoasis/powerline-extra-symbols
 ;; - weather-icons           https://erikflowers.github.io/weather-icons/
-;;
-;; and the original `AllTheIcons' is just aliases font-mfizz.
+;; - all-the-icons           https://github.com/domtronn/all-the-icons.el
 ;;
 ;;; Usage:
+;;
+;; Same as original version. Please see following (original) docs.
 ;;
 ;; The simplest usage for this package is to use the following functions;
 ;;
@@ -97,7 +99,7 @@
 ;;; Code:
 (require 'memoize)
 (require 'cl-lib)
-(require 'data-alltheicons  "./data/data-alltheicons.el") ; same as mfizz.
+(require 'data-alltheicons  "./data/data-alltheicons.el")
 (require 'data-devicons     "./data/data-devicons.el")
 (require 'data-faicons      "./data/data-faicons.el")
 (require 'data-fileicons    "./data/data-fileicons.el")
@@ -810,19 +812,19 @@ FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
        (interactive "P")
        (all-the-icons-insert arg (quote ,name)))))
 
-(define-icon alltheicon all-the-icons-data/alltheicons-alist    "all-the-icons")
-(define-icon devicon    all-the-icons-data/devicons-alist       "devicons")
-(define-icon faicon     all-the-icons-data/fa-icon-alist        "FontAwesome")
-(define-icon fileicon   all-the-icons-data/file-icon-alist      "file-icons")
-(define-icon fracode    all-the-icons-data/firacode-alist       "firacode")
-(define-icon linea      all-the-icons-data/linea-alist          "linea-icons")
-(define-icon linux      all-the-icons-data/linux-alist          "linux-icons")
-(define-icon material   all-the-icons-data/material-icons-alist "Material Icons"  "material-design-icons")
-(define-icon mfizz      all-the-icons-data/mfizz-alist          "Mfizz Icons")
-(define-icon octicon    all-the-icons-data/octicons-alist       "github-octicons" "octicons")
-(define-icon pomodoro   all-the-icons-data/pomodoro-alist       "pomodoro")
-(define-icon powerline  all-the-icons-data/powerline-alist      "powerline")
-(define-icon wicon      all-the-icons-data/weather-icons-alist  "Weather Icons"   "weathericons")
+(define-icon alltheicon all-the-icons-data/alltheicons-alist    "icons-in-terminal")
+(define-icon devicon    all-the-icons-data/devicons-alist       "icons-in-terminal")
+(define-icon faicon     all-the-icons-data/fa-icon-alist        "icons-in-terminal")
+(define-icon fileicon   all-the-icons-data/file-icon-alist      "icons-in-terminal")
+(define-icon fracode    all-the-icons-data/firacode-alist       "icons-in-terminal")
+(define-icon linea      all-the-icons-data/linea-alist          "icons-in-terminal")
+(define-icon linux      all-the-icons-data/linux-alist          "icons-in-terminal")
+(define-icon material   all-the-icons-data/material-icons-alist "icons-in-terminal")
+(define-icon mfizz      all-the-icons-data/mfizz-alist          "icons-in-terminal")
+(define-icon octicon    all-the-icons-data/octicons-alist       "icons-in-terminal")
+(define-icon pomodoro   all-the-icons-data/pomodoro-alist       "icons-in-terminal")
+(define-icon powerline  all-the-icons-data/powerline-alist      "icons-in-terminal")
+(define-icon wicon      all-the-icons-data/weather-icons-alist  "icons-in-terminal")
 
 (provide 'all-the-icons)
 
