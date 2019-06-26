@@ -40,4 +40,4 @@
     ("powerline_extra-trapezoid-top-bottom-mirrored"    . "\xe0d4")
     ))
 
-(provide 'data-powerline_in-terminal)
+(provide 'data-powerline-in-terminal)
