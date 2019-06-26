@@ -1,123 +1,61 @@
 [
     {
-	"name": "octicons",
-	"short-name": "oct",
-	"path": "./fonts/octicons.ttf"
+        "name": "octicons",
+        "short-name": "oct",
+        "path": "./fonts/octicons.ttf"
     },
     {
-	"name": "fontawesome",
-	"short-name": "fa",
-	"path": "./fonts/FontAwesome.otf",
-	"start-from": "0xF000",
-	"map-names": "fonts/FontAwesome-map",
-	"until": "0xF2E1"
+        "name": "fontawesome",
+        "short-name": "fa",
+        "path": "./fonts/FontAwesome.otf",
+        "start-from": "0xF000",
+        "map-names": "fonts/FontAwesome-map",
+        "until": "0xF2E1"
     },
     {
-	"name": "material",
-	"short-name": "md",
-	"path": "./fonts/material-design-icons.ttf",
-	"map-names": "./fonts/material-design-map",
-	"start-from": "0xE000",
-	"move-vertically": -150
+        "name": "material",
+        "short-name": "md",
+        "path" : "./fonts/MaterialIcons-Regular.ttf",
+        "map-names": "./fonts/material-design-map",
+        "start-from": "0xE000",
+        "move-vertically": -150
     },
     {
-	"name": "fileicons",
-	"short-name": "file",
-	"path": "./fonts/file-icons.ttf",
-	"map-names": "fonts/file-icons-map",
-	"move-vertically": -100
+        "name": "fileicons",
+        "short-name": "file",
+        "path": "./fonts/file-icons.ttf",
+        "map-names": "fonts/file-icons-map",
+        "move-vertically": -100
     },
     {
-	"name": "weather",
-	"path": "./fonts/weathericons.ttf",
-	"map-names": "./fonts/weathericons-map",
-	"start-from": "0xF000"
+        "name": "weather",
+        "path": "./fonts/weathericons.ttf",
+        "map-names": "./fonts/weathericons-map",
+        "start-from": "0xF000"
     },
     {
-	"name": "linux",
-	"short-name": "linux",
-	"path": "./fonts/font-linux.ttf",
-	"map-names": "./fonts/font-linux-map",
-	"start-from": "0xF100"
+        "name": "logo",
+        "short-name": "linux",
+        "path": "./fonts/font-logos.ttf",
+        "map-names": "./fonts/font-logos-map",
+        "start-from": "0xF100"
     },
     {
-	"name": "myicons",
-	"path": "./fonts/myicons.ttf",
-	"excludes": [ "0xFFFD" ]
+        "name": "myicons",
+        "path": "./fonts/myicons.ttf",
+        "excludes": [ "0xFFFD" ]
     },
     {
-	"name": "devicons",
-	"short-name": "dev",
-	"path": "./fonts/devicons.ttf",
-	"map-names": "./fonts/devicons-map",
-	"start-from": "0xE600",
-	"excludes": [ "0xFFFD" ]
+        "name": "devicons",
+        "short-name": "dev",
+        "path": "./fonts/devicons.ttf",
+        "map-names": "./fonts/devicons-map",
+        "start-from": "0xE600",
+        "excludes": [ "0xFFFD" ]
     },
     {
-	"name": "pomicons",
-	"short-name": "pom",
-	"path": "./fonts/Pomicons.ttf",
-	"start-from": "0xE000",
-	"excludes": [ "0x20", "0xA0" ]
-    },
-    {
-	"name": "linea-arrows",
-	"path": "./fonts/linea/linea-arrows-10.ttf",
-	"map-names": "./fonts/linea/linea-arrows-10-map",
-	"move-vertically": -200
-    },
-    {
-	"name": "linea-basic",
-	"path": "./fonts/linea/linea-basic-10.ttf",
-	"map-names": "./fonts/linea/linea-basic-10-map",
-	"move-vertically": -200
-    },
-    {
-	"name": "linea-basic-elaboration",
-	"short-name": "linea-elaboration",
-	"path": "./fonts/linea/linea-basic-elaboration-10.ttf",
-	"map-names": "./fonts/linea/linea-basic-elaboration-10-map",
-	"move-vertically": -200
-    },
-    {
-	"name": "linea-ecommerce",
-	"path": "./fonts/linea/linea-ecommerce-10.ttf",
-	"map-names": "./fonts/linea/linea-ecommerce-10-map",
-	"move-vertically": -200
-    },
-    {
-	"name": "linea-music",
-	"path": "./fonts/linea/linea-music-10.ttf",
-	"map-names": "./fonts/linea/linea-music-10-map",
-	"move-vertically": -200
-    },
-    {
-	"name": "linea-software",
-	"path": "./fonts/linea/linea-software-10.ttf",
-	"map-names": "./fonts/linea/linea-software-10-map",
-	"move-vertically": -200
-    },
-    {
-	"name": "linea-weather",
-	"path": "./fonts/linea/linea-weather-10.ttf",
-	"map-names": "./fonts/linea/linea-weather-10-map",
-	"move-vertically": -200
-    },
-    {
-	"name": "mfizz",
-	"path": "./fonts/font-mfizz.ttf",
-	"map-names": "./fonts/font-mfizz-map",
-	"excludes": [ "0x20" ]
-    },
-    {
-	"name": "firacode",
-	"path": "./fonts/FiraCode-Regular-Symbol.otf",
-	"map-names": "./fonts/FiraCode-Regular-Symbol-map",
-	"excludes": [ "0xE0A0", "0xE0A1", "0xE0A2", "0xE0B0", "0xE0B1", "0xE0B2", "0xE0B3" ]
-    },
-    {
-	"name": "alltheicons",
-	"path": "./fonts/all-the-icons.ttf",
-	"map-names": "./fonts/all-the-icons-map"
+        "name": "alltheicons",
+        "path": "./fonts/all-the-icons.ttf",
+        "map-names": "./fonts/all-the-icons-map"
     }
 ]

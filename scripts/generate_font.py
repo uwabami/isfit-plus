@@ -5,8 +5,8 @@ import string
 import os
 import sys
 import json
-import fontforge
 import psMat
+import fontforge
 
 PUA_START = 0xE000
 PUA_END = 0xF8FF
@@ -35,8 +35,9 @@ def lookup_map_name(map_names, codepoint, fallback_name):
             return name
     return fallback_name
 
-# Insert the powerline glyphs at the same place that all the patched powerline fonts to make
-# our font compatible with most of plugins/modules that insert those glyphs
+# Insert the powerline glyphs at the same place that all the patched
+# powerline fonts to make our font compatible with most of
+# plugins/modules that insert those glyphs
 def insert_powerline_extra(dest):
     codepoint = POWERLINE_START
     font = fontforge.open("./fonts/PowerlineExtraSymbols.otf")
@@ -186,7 +187,7 @@ with open(sys.argv[1]) as config_file:
     dest.appendSFNTName('English (US)', 'Preferred Family', dest.familyname)
     dest.appendSFNTName('English (US)', 'Compatible Full', dest.fullname)
     dest.fontname= "icons-in-terminal"
-    dest.generate("icons-in-terminal.ttf")
+    dest.generate("dists/icons-in-terminal.ttf")
     sys.exit(0)
 
 sys.exit(1)
