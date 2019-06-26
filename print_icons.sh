@@ -3,7 +3,7 @@
 YELLOW='\033[1;33m'
 GREEN='\033[0;32m'
 NC='\033[0m'
-filename="./build/mapping.txt"
+filename="./dists/mapping.txt"
 count=0
 
 while read -r line

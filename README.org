@@ -11,7 +11,7 @@
   - dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]] fonts
     instead of original fonts of all-the-icons.el.
 ** Installation
-   Get generated [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/build/icons-in-terminal.ttf][fonts]] and install it.
+   Get generated [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/dists/icons-in-terminal.ttf][fonts]] and install it.
 
    After install these fonts, I recommend use [[https://framagit.org/steckerhalter/quelpa][quelpa]] or [[https://framagit.org/steckerhalter/quelpa-use-package][quelpa-use-package]],
    such that:
