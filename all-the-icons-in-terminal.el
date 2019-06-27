@@ -2,11 +2,10 @@
 ;;
 ;; Copyright (C) 2019 Youhei SASAKI<uwabami@gfd-dennou.org>
 ;;
-;;
-;; Author: Dominic Charlesworth <dgc336@gmail.com>
-;; Version: 20190303
+;; Original author: Youhei SASAKI<uwabami@gfd-dennou.org>
+;; Version: 20190627
 ;; Package-Requires: ((all-the-icons "20190223.2143"))
-;; URL: https://github.com/domtronn/all-the-icons.el
+;; URL: https://github.com/uwabami/all-the-icons-in-terminal
 ;; Keywords: convenient, lisp
 ;;
 ;; This program is free software; you can redistribute it and/or
@@ -28,17 +27,12 @@
 ;; https://github.com/domtronn/all-the-icons.el
 ;; by Dominic Charlesworth <dgc336@gmail.com>.
 ;;
-;; Currently, this package provides an interface to the following Icon Fonts
-;; through folk version of `icons-in-terminal` fonts.
+;; Currently, this package provides an interface to the following Icon Fonts.
 ;;
 ;; - Devicons                https://github.com/vorillaz/devicons
-;; - FiraCode                https://github.com/tonsky/FiraCode
-;; - Pomicons                https://github.com/gabrielelana/pomicons
 ;; - file-icons              https://atom.io/packages/file-icons
-;; - font-linux              https://github.com/Lukas-W/font-linux
-;; - font-mfizz              https://github.com/fizzed/font-mfizz
+;; - font-logo               https://github.com/lukas-W/font-logos
 ;; - fontawesome             http://fontawesome.io/
-;; - linea                   http://linea.io/
 ;; - material-design-icons   https://github.com/google/material-design-icons
 ;; - octicons                https://octicons.github.com/
 ;; - powerline-extra-symbols https://github.com/ryanoasis/powerline-extra-symbols
