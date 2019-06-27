@@ -56,6 +56,7 @@
     {
         "name": "alltheicons",
         "path": "./fonts/all-the-icons.ttf",
-        "map-names": "./fonts/all-the-icons-map"
+        "map-names": "./fonts/all-the-icons-map",
+        "excludes": [ "0xE916", "0xFFFD" ]
     }
 ]
