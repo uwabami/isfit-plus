@@ -1,17 +1,17 @@
 #+startup: content
 * All the icons with icons in terminal
 ** Overview
-  The original fonts provided by [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] uses some CJK
-  Compatibility Ideographs area, not Private Use Area.
-  So I update/repacking all glyphs into Private Use Area(from 0xE000 to 0xF8FF).
+  The original [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] provides great feature.  But some icon
+  fonts use CJK Compatibility Ideographs area, not Private Use Area.
+  It's not suitable for many CJK uses, so
+  I update/repack all icon glyphs into Private Use Area: from 0xE000 to 0xF8FF.
 
   In this repository, provides
-  - Font generator of [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]]
-    (modified ver. original + all-the-icons.ttf)
-  - dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]] fonts
-    instead of original fonts of all-the-icons.el.
+  - Modivided version of font generator: [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]]
+    (modified ver. original + all-the-icons.ttf).
+  - Dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use my custom fonts.
 ** Installation
-   Get generated [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/dists/icons-in-terminal.ttf][fonts]] and install it.
+   Get generated [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/dists/icons-in-terminal-plus.ttf][fonts]] and install it.
 
    After install these fonts, I recommend use [[https://framagit.org/steckerhalter/quelpa][quelpa]] or [[https://framagit.org/steckerhalter/quelpa-use-package][quelpa-use-package]],
    such that:
@@ -25,17 +25,18 @@
   )
    #+END_SRC
 ** Font sources
-   |-----------------------+---------------------+-----------------------|
-   | Name                  | Version             | License               |
-   |-----------------------+---------------------+-----------------------|
-   | [[https://github.com/vorillaz/devicons][Devicons]]              | 2015/05/02(b574cde) | MIT/X11               |
-   | [[https://fontawesome.com/v4.7.0/][FontAwesome]]           | 4.7                 | [[https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL][SIL OFL v1.1]]          |
-   | [[https://github.com/google/material-design-icons/][Material Design Icons]] | v2.2.0              | [[https://github.com/google/material-design-icons/blob/master/LICENSE][Apache 2.0]]            |
-   | [[https://github.com/file-icons/icons/][file-icons]]            | 2019/06/01(de534d3) | [[https://github.com/file-icons/icons/blob/master/LICENSE.md][ISC License]] (MIT/X11) |
-   | [[https://github.com/primer/octicons][octicons]]              | v4.4.0              | [[https://github.com/primer/octicons/blob/master/LICENSE][MIT/X11]]               |
-   | [[https://github.com/Lukas-W/font-logos][font-logos]]            | v0.11               | [[https://github.com/lukas-w/font-logos/blob/master/LICENSE][Unlicense]]             |
-   | [[https://github.com/domtronn/all-the-icons.el][all-the-icons.ttf]]     | 3.2.0               | [[https://github.com/domtronn/all-the-icons.el/blob/master/LICENSE][MIT/X11]]               |
-   |-----------------------+---------------------+-----------------------|
+   |-----------------------+---------------------+--------------|
+   | Name                  | Version             | License      |
+   |-----------------------+---------------------+--------------|
+   | [[https://github.com/vorillaz/devicons/tree/b574cde/][Devicons]]              | 2015/05/02(b574cde) | MIT/X11      |
+   | [[https://fontawesome.com/v4.7.0/][FontAwesome]]           | 4.7                 | [[https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL][SIL OFL v1.1]] |
+   | [[https://github.com/google/material-design-icons/][Material Design Icons]] | v2.2.2              | [[https://github.com/google/material-design-icons/tree/2.2.2/LICENSE][CC BY-4.0]]    |
+   | [[https://github.com/file-icons/icons/tree/de534d3][file-icons]]            | 2019/06/01(de534d3) | [[https://github.com/file-icons/icons/blob/de534d3/LICENSE.md][ISC License]]  |
+   | [[https://github.com/primer/octicons][octicons]]              | v4.4.0              | [[https://github.com/primer/octicons/blob/v4.4.0/LICENSE][MIT/X11]]      |
+   | [[https://github.com/Lukas-W/font-logos][font-logos]]            | v0.11               | [[https://github.com/lukas-w/font-logos/blob/master/LICENSE][Unlicense]]    |
+   | [[https://github.com/domtronn/all-the-icons.el][all-the-icons.ttf]]     | 3.2.0               | [[https://github.com/domtronn/all-the-icons.el/blob/master/LICENSE][MIT/X11]]      |
+   | [[https://github.com/erikflowers/weather-icons/][Weather Icons]]         | v2.0.10             | [[https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL][SIL OFL v1.1]] |
+   |-----------------------+---------------------+--------------|
 ** Important Notice/Disclaimer
    If you find any bugs, please report me. *Do not send upstream*.
 
@@ -43,3 +44,10 @@
 ** License
    - Codes: MIT/X11
    - Fonts: SIL OFL v1.1
+
+   All icons representing commercial companies are trademarks of their
+   respective owners. The use of these trademarks does not indicate
+   endorsement of the trademark holder by me, nor vice versa.
+** Ref.
+   - [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]]
+   - [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]]
