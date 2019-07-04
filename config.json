@@ -41,11 +41,6 @@
         "start-from": "0xF100"
     },
     {
-        "name": "myicons",
-        "path": "./fonts/myicons.ttf",
-        "excludes": [ "0xFFFD" ]
-    },
-    {
         "name": "devicons",
         "short-name": "dev",
         "path": "./fonts/devicons.ttf",

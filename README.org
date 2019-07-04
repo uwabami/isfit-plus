@@ -1,5 +1,5 @@
 #+startup: content
-* All the icons with icons in terminal
+* Icon Symbols In Terminal plus
 ** Overview
   The original [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] provides great feature.  But some icon
   fonts use CJK Compatibility Ideographs area, not Private Use Area.
@@ -10,6 +10,10 @@
   - Modivided version of font generator: [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]]
     (modified ver. original + all-the-icons.ttf).
   - Dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use my custom fonts.
+
+  Following SIL OFL v1.1, generated fonts renamed
+  "*"isfit+"*", *I*con *S*ymbols *I*n *T*erminal *P*lus.
+
 ** Installation
    Get generated [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/dists/icons-in-terminal-plus.ttf][fonts]] and install it.
 

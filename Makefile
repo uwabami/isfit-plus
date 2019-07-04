@@ -11,7 +11,7 @@ build: download
 	./scripts/generate_font.py ./config.json > $(DIST)/mapping.txt
 	@echo "----- Everything seems good -----"
 
-download: dev powerline fontawesome md oct logos weather file alltheicons my
+download: dev powerline fontawesome md oct logos weather file alltheicons
 
 dev:
 	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
@@ -78,12 +78,6 @@ alltheicons:
 	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
 	@if [ ! -f $(SRCD)/all-the-icons.ttf ] ; then\
 	  wget https://github.com/domtronn/all-the-icons.el/raw/52d1f2d36468146c93aaf11399f581401a233306/fonts/all-the-icons.ttf -O $(SRCD)/all-the-icons.ttf ;\
-	fi
-
-my:
-	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
-	@if [ ! -f $(SRCD)/myicons.ttf ] ; then\
-	  wget https://github.com/sebastiencs/icons-in-terminal/raw/master/fonts/myicons.ttf -O $(SRCD)/myicons.ttf ;\
 	fi
 
 clean:

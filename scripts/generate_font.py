@@ -181,13 +181,13 @@ with open(sys.argv[1]) as config_file:
     dest.hhea_descent = -descent
 
     dest.em = FONT_EM
-    dest.fontname = "icons-in-terminal"
-    dest.familyname = "icons-in-terminal"
-    dest.fullname = "icons-in-terminal"
+    dest.fontname = "isfit+"
+    dest.familyname = "isfit+"
+    dest.fullname = "isfit+"
     dest.appendSFNTName('English (US)', 'Preferred Family', dest.familyname)
     dest.appendSFNTName('English (US)', 'Compatible Full', dest.fullname)
-    dest.fontname= "icons-in-terminal"
-    dest.generate("dists/icons-in-terminal.ttf")
+    dest.fontname= "isfit+"
+    dest.generate("dists/isfit-plus.ttf")
     sys.exit(0)
 
 sys.exit(1)
