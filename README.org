@@ -1,5 +1,5 @@
 #+startup: content
-* Icon Symbols In Terminal plus
+* Icon Symbols Font In Terminal plus
 ** Overview
   The original [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] provides great feature.  But some icon
   fonts use CJK Compatibility Ideographs area, not Private Use Area.
@@ -7,15 +7,15 @@
   I update/repack all icon glyphs into Private Use Area: from 0xE000 to 0xF8FF.
 
   In this repository, provides
-  - Modivided version of font generator: [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]]
-    (modified ver. original + all-the-icons.ttf).
-  - Dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use my custom fonts.
+  - Modivided version of font generator.
+    The origilal version is provided by [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]].
+  - Dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use isfit+.
 
   Following SIL OFL v1.1, generated fonts renamed
-  "*"isfit+"*", *I*con *S*ymbols *I*n *T*erminal *P*lus.
+  "*"isfit+"*", Icon Symbols Font In Terminal Plus.
 
 ** Installation
-   Get generated [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/dists/icons-in-terminal-plus.ttf][fonts]] and install it.
+   Get generated [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/dists/isfit-plus.ttf][fonts]] and install it.
 
    After install these fonts, I recommend use [[https://framagit.org/steckerhalter/quelpa][quelpa]] or [[https://framagit.org/steckerhalter/quelpa-use-package][quelpa-use-package]],
    such that:
@@ -46,8 +46,9 @@
 
    Enjoy!
 ** License
-   - Codes: MIT/X11
-   - Fonts: SIL OFL v1.1
+
+   All Code: MIT/X11
+   Font: SIL OFL v1.1
 
    All icons representing commercial companies are trademarks of their
    respective owners. The use of these trademarks does not indicate
