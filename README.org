@@ -7,7 +7,7 @@
   I update/repack all icon glyphs into Private Use Area: from 0xE000 to 0xF8FF.
 
   In this repository, provides
-  - Modifided version of font generator.
+  - Modified version of font generator.
     The origilal version is provided by [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]].
   - Dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use isfit+.
 
