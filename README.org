@@ -12,7 +12,7 @@
   - Dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use isfit+.
 
   Following SIL OFL v1.1, generated fonts renamed
-  "*"isfit+"*", Icon Symbols Font In Terminal Plus.
+  *isfit+*, Icon Symbols Font In Terminal Plus.
 
 ** Installation
    Get generated [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/dists/isfit-plus.ttf][fonts]] and install it.
