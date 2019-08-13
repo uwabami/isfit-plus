@@ -515,15 +515,15 @@
 ))
 
 ;;
-(define-icon alltheicon all-the-icons-in-terminal-data/alltheicons-alist    "icons-in-terminal")
-(define-icon devicon    all-the-icons-in-terminal-data/devicons-alist       "icons-in-terminal")
-(define-icon faicon     all-the-icons-in-terminal-data/fa-icon-alist        "icons-in-terminal")
-(define-icon fileicon   all-the-icons-in-terminal-data/file-icon-alist      "icons-in-terminal")
-(define-icon linux      all-the-icons-in-terminal-data/linux-alist          "icons-in-terminal")
-(define-icon material   all-the-icons-in-terminal-data/material-icons-alist "icons-in-terminal")
-(define-icon octicon    all-the-icons-in-terminal-data/octicons-alist       "icons-in-terminal")
-(define-icon powerline  all-the-icons-in-terminal-data/powerline-alist      "icons-in-terminal")
-(define-icon wicon      all-the-icons-in-terminal-data/weather-icons-alist  "icons-in-terminal")
+(define-icon alltheicon all-the-icons-in-terminal-data/alltheicons-alist    "isfit+")
+(define-icon devicon    all-the-icons-in-terminal-data/devicons-alist       "isfit+")
+(define-icon faicon     all-the-icons-in-terminal-data/fa-icon-alist        "isfit+")
+(define-icon fileicon   all-the-icons-in-terminal-data/file-icon-alist      "isfit+")
+(define-icon linux      all-the-icons-in-terminal-data/linux-alist          "isfit+")
+(define-icon material   all-the-icons-in-terminal-data/material-icons-alist "isfit+")
+(define-icon octicon    all-the-icons-in-terminal-data/octicons-alist       "isfit+")
+(define-icon powerline  all-the-icons-in-terminal-data/powerline-alist      "isfit+")
+(define-icon wicon      all-the-icons-in-terminal-data/weather-icons-alist  "isfit+")
 ;;
 
 (provide 'all-the-icons-in-terminal)
