@@ -1,6 +1,5 @@
-SRCD = fonts
+SRCD = glyphs
 DIST = dists
-TMPD = tmp
 VERSION = $(shell date '+%Y%m%d%H%M%S')
 
 all: build
@@ -8,25 +7,38 @@ all: build
 build: download
 	@[ -d $(DIST) ] ||  mkdir -p $(DIST)
 	@echo "----- build start -----"
-	./scripts/generate_font.py ./config.json > $(DIST)/mapping.txt
+	@PYTHONPATH=$(CURDIR)/scripts \
+	  python3 -c "import sys;import build; sys.exit(build.build('$(VERSION)'))"
+	@rm -f isfit-plus.ttf
 	@echo "----- Everything seems good -----"
 
-download: dev powerline fontawesome md oct logos weather file alltheicons
+download: \
+	set-ui_custom \
+	devicons \
+	fa \
+	fa_ext \
+	file \
+	md \
+	oct \
+	powerline \
+	logos \
+	weather \
+	powerline \
+	alltheicons
 
-dev:
+set-ui_custom:
+	@[ -d $(SRCD) ] || mkdir -p $(SRCD)
+	@if [ ! -f $(SRCD)/set-ui_custom.otf ] ; then\
+	  wget https://github.com/ryanoasis/nerd-fonts/raw/master/src/glyphs/original-source.otf -O $(SRCD)/set-ui_custom.otf ;\
+	fi
+
+devicons:
 	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
 	@if [ ! -f $(SRCD)/devicons.ttf ] ; then\
 	  wget https://github.com/vorillaz/devicons/raw/master/fonts/devicons.ttf -O $(SRCD)/devicons.ttf ;\
 	fi
 
-powerline:
-	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
-	@if [ ! -f $(SRCD)/PowerlineExtraSymbols.otf ] ; then\
-	  echo "Download Powerline Extra Symbols" ;\
-	  wget https://github.com/ryanoasis/powerline-extra-symbols/raw/90b84948574773f8a2f08bcd26718f7c158f7a41/PowerlineExtraSymbols.otf -O $(SRCD)/PowerlineExtraSymbols.otf ;\
-	fi
-
-fontawesome:
+fa:
 	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
 	@if [ ! -f $(SRCD)/FontAwesome.otf ] ; then\
 	  echo "Download FontAwesome v4.7.0" ;\
@@ -37,9 +49,16 @@ fontawesome:
 	  rm -f v4.7.0.zip ;\
 	fi
 
+fa_ext:
+	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
+	@if [ ! -f $(SRCD)/font-awesome-extension.ttf ] ; then\
+	  echo "Download FontAwesome Extension" ;\
+	  wget https://github.com/AndreLZGava/font-awesome-extension/raw/master/fonts/font-awesome-extension.ttf -O $(SRCD)/font-awesome-extension.ttf ;\
+	fi
+
 md:
-	@if [ ! -f $(SRCD)/MaterialIcons-Regular.ttf ] ; then\
-	  wget https://github.com/google/material-design-icons/raw/master/iconfont/MaterialIcons-Regular.ttf -O $(SRCD)/MaterialIcons-Regular.ttf ;\
+	@if [ ! -f $(SRCD)/materialdesignicons-webfont.ttf ] ; then\
+	  wget https://github.com/Templarian/MaterialDesign-Webfont/raw/master/fonts/materialdesignicons-webfont.ttf -O $(SRCD)/materialdesignicons-webfont.ttf ;\
 	fi
 
 oct:
@@ -51,6 +70,13 @@ oct:
 	  cp -v octicons-4.4.0/build/font/octicons.ttf $(SRCD)/octicons.ttf ;\
 	  rm -fr octicons-4.4.0 ;\
 	  rm -f v4.4.0.zip ;\
+	fi
+
+powerline:
+	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
+	@if [ ! -f $(SRCD)/PowerlineExtraSymbols.otf ] ; then\
+	  echo "Download Powerline Extra Symbols" ;\
+	  wget https://github.com/ryanoasis/powerline-extra-symbols/raw/90b84948574773f8a2f08bcd26718f7c158f7a41/PowerlineExtraSymbols.otf -O $(SRCD)/PowerlineExtraSymbols.otf ;\
 	fi
 
 logos:
@@ -82,9 +108,9 @@ alltheicons:
 
 clean:
 	@rm -f scripts/*.pyc
+	@rm -fr scripts/_pycache_
 
-# distclean: clean
-# 	rm -fr $(SRCD)/*.ttf
-# 	rm -fr $(SRCD)/*.otf
-# 	rm -fr $(DIST)/*.ttf
-# 	rm -fr $(TMPD)
+distclean: clean
+	rm -fr $(SRCD)/*.ttf
+	rm -fr $(SRCD)/*.otf
+	rm -fr $(DIST)/*.ttf
