@@ -8,11 +8,11 @@
    Use Area. see https://github.com/ryanoasis/nerd-fonts/issues/365.
 
    In this repository, provides
-   - Modified version's icon fonts, named [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/dists/isfit-plus.ttf][isfit+]].
+   - Modified version's icon fonts, named [[https://github.com/uwabami/isfit-plus/raw/master/dists/isfit-plus.ttf][isfit+]].
      - Following SIL OFL v1.1, generated fonts renamed *isfit+*, Icon Symbols Font In Terminal Plus.
    - Dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use isfit+.
 ** Installation
-   Get generated [[https://github.com/uwabami/all-the-icons-in-terminal/raw/master/dists/isfit-plus.ttf][fonts]] and install it.
+   Get generated [[https://github.com/uwabami/isfit-plus/raw/master/dists/isfit-plus.ttf][fonts]] and install it.
 
    After install these fonts,
    I recommend use [[https://framagit.org/steckerhalter/quelpa][quelpa]] or [[https://framagit.org/steckerhalter/quelpa-use-package][quelpa-use-package]], such that:
