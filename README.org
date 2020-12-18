@@ -21,7 +21,7 @@
 (use-package all-the-icons-in-terminal
   :quelpa (all-the-icons
            :fetcher github
-           :repo "uwabami/all-the-icons-in-terminal"
+           :repo "uwabami/isfit-plus"
            :files (:defaults "data"))
   )
    #+END_SRC
