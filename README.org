@@ -45,29 +45,29 @@
    Following plan2 of above issue,
    *the difference form Nerd fonts is the range of Material icon's*.
    @see [[file:mapping.org][mapping]] for details.
-   |-------------------------+------------+-------------|
-   | Font Name               | source     | generated   |
-   |-------------------------+------------+-------------|
-   | Seti-UI + Custom        | E4FA-E52E  | E5FA-E62E   |
-   | Devicons                | E600-E6C5  | E700-E7C5   |
-   | Powerline Symbols       | E0A0-E0B3  | ←          |
-   | Powerline Extra Symbols | E0A3-E0D4  | ←          |
-   | Pomicons                | E000-E00A  | ←          |
-   | Font Awesome            | F000-F2E0  | ←          |
-   | Font Awesome Extension  | E000-E0A9  | E200-E2A9   |
-   | Font Logos (Font Linux) | F100-F11C  | F300-F31C   |
-   | Power Symbols           | 23FB-2B58  | ←          |
-   | Octicons                | 2665-2665  | ←          |
-   | Octicons                | 26A1-26A1  | ←          |
-   | Octicons                | F000-F0E8  | F400-F438   |
-   | Octicons                | F101-F105  | F501-F505   |
-   | Octicons                | F27C-F27C  | F4A9-F4A9   |
-   | Material                | F001-F800  | *E800-EC47* |
-   | Material                | F801-F847  | *F500-F8FF* |
-   | Weather Icons           | F000-F0EB  | E300-E3EB   |
-   | File Icons              | many glpyh | *EC48-EFD9* |
-   | All The Icons           | E903-E940  | *E0E0-E11D* |
-   |-------------------------+------------+-------------|
+   |-------------------------+---------------+-------------|
+   | Font Name               | source        | generated   |
+   |-------------------------+---------------+-------------|
+   | Seti-UI + Custom        | E4FA-E52E     | E5FA-E62E   |
+   | Devicons                | E600-E6C5     | E700-E7C5   |
+   | Powerline Symbols       | E0A0-E0B3     | ←          |
+   | Powerline Extra Symbols | E0A3-E0D4     | ←          |
+   | Pomicons                | E000-E00A     | ←          |
+   | Font Awesome            | F000-F2E0     | ←          |
+   | Font Awesome Extension  | E000-E0A9     | E200-E2A9   |
+   | Font Logos (Font Linux) | F100-F11C     | F300-F31C   |
+   | Power Symbols           | 23FB-2B58     | ←          |
+   | Octicons                | 2665-2665     | ←          |
+   | Octicons                | 26A1-26A1     | ←          |
+   | Octicons                | F000-F0E8     | F400-F438   |
+   | Octicons                | F101-F105     | F501-F505   |
+   | Octicons                | F27C-F27C     | F4A9-F4A9   |
+   | Material                | _F0001-F0400_ | *F500-F8FF* |
+   | Material                | _F0401-F0848_ | *E800-EC47* |
+   | Weather Icons           | F000-F0EB     | E300-E3EB   |
+   | File Icons              | many glpyh    | *EC48-EFD9* |
+   | All The Icons           | E903-E940     | *E0E0-E11D* |
+   |-------------------------+---------------+-------------|
 ** License, Important Notice/Disclaimer
 
    All Code: MIT/X11
