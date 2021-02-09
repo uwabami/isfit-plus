@@ -33,7 +33,7 @@
    | [[https://github.com/vorillaz/devicons/tree/b574cde/][Devicons]]               | 2015/05/02(b574cde) | MIT/X11                     |
    | [[https://fontawesome.com/v4.7.0/][FontAwesome]]            | 4.7                 | [[https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL][SIL OFL v1.1]]                |
    | [[https://github.com/Templarian/MaterialDesign-Webfont][Material Design Icons]]  | v4.7.95             | [[https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL][SIL OFL v1.1]] and [[https://www.apache.org/licenses/LICENSE-2.0][Apache 2.0]] |
-   | [[https://github.com/file-icons/icons/tree/de534d3][file-icons]]             | 2019/06/01(de534d3) | [[https://github.com/file-icons/icons/blob/de534d3/LICENSE.md][ISC License]]                 |
+   | [[https://github.com/file-icons/icons/tree/de534d3][file-icons]]             | v2.1.4              | [[https://github.com/file-icons/atom/blob/v2.1.46/LICENSE.md][MIT/X11]]                     |
    | [[https://github.com/primer/octicons][octicons]]               | v4.4.0              | [[https://github.com/primer/octicons/blob/v4.4.0/LICENSE][MIT/X11]]                     |
    | [[https://github.com/Lukas-W/font-logos][font-logos]]             | v0.11               | [[https://github.com/lukas-w/font-logos/blob/master/LICENSE][Unlicense]]                   |
    | [[https://github.com/domtronn/all-the-icons.el][all-the-icons.ttf]]      | 3.2.0               | [[https://github.com/domtronn/all-the-icons.el/blob/master/LICENSE][MIT/X11]]                     |
@@ -65,7 +65,7 @@
    | Material                | F001-F800  | *E800-EC47* |
    | Material                | F801-F847  | *F500-F8FF* |
    | Weather Icons           | F000-F0EB  | E300-E3EB   |
-   | File Icons              | many glpyh | *EC48-EEFF* |
+   | File Icons              | many glpyh | *EC48-EFD9* |
    | All The Icons           | E903-E940  | *E0E0-E11D* |
    |-------------------------+------------+-------------|
 ** License, Important Notice/Disclaimer

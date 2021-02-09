@@ -7,3 +7,6 @@
 # data
 glyphs/*.ttf
 glyphs/*.otf
+
+# python
+__pycache__
