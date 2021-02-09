@@ -12687,6 +12687,12 @@ def _transform_sym(symfont, info):
         x_diff = -100
         y_diff = -100
 
+    elif info["name"] == "Material Design Icons by Google":
+        x_ratio = 0.95
+        y_ratio = 0.95
+        x_diff = -100
+        y_diff = -250
+
     scale = psMat.scale(x_ratio, y_ratio)
     translate = psMat.translate(x_diff, y_diff)
     transform = psMat.compose(scale, translate)
