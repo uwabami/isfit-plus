@@ -55,7 +55,7 @@ def build(version):
     dest.weight = prop["weight"]
     dest.os2_weight = prop["os2_weight"]
     dest.os2_width = 5  # Medium (w/h = 1.000)
-    dest.os2_fstype = 4  # Printable Document (suitable for SF Mono)
+    dest.os2_fstype = 4  # Printable Document
     dest.os2_vendor = "YS"  # me
     dest.os2_family_class = 2057  # SS Typewriter Gothic
     dest.os2_panose = (

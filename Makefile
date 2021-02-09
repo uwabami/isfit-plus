@@ -19,6 +19,7 @@ download: \
 	fa_ext \
 	file \
 	md \
+	mdg \
 	oct \
 	powerline \
 	logos \
@@ -59,6 +60,11 @@ fa_ext:
 md:
 	@if [ ! -f $(SRCD)/materialdesignicons-webfont.ttf ] ; then\
 	  wget https://github.com/Templarian/MaterialDesign-Webfont/raw/master/fonts/materialdesignicons-webfont.ttf -O $(SRCD)/materialdesignicons-webfont.ttf ;\
+	fi
+
+mdg:
+	@if [ ! -f $(SRCD)/MaterialIcons-Regular.ttf ] ; then\
+	  wget https://github.com/google/material-design-icons/raw/master/font/MaterialIcons-Regular.ttf -O $(SRCD)/MaterialIcons-Regular.ttf ;\
 	fi
 
 oct:
