@@ -1,6 +1,6 @@
 #+startup: content
 * Icon Symbols Font In Terminal plus
-  [[file:screenshot.webp][screenshot.png]]
+  [[file:screenshot.png][screenshot.webp]]
 ** Overview
    The [[https://github.com/ryanoasis/nerd-fonts/][Nerd fonts]], icons font collection provides nice fonts,
    and also, the [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] provides great feature.
