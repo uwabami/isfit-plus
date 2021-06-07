@@ -53,7 +53,7 @@
 ;;
 
 ;; override icon alist
-(setq all-the-icons-icon-alist
+(setq all-the-icons-extension-icon-alist
   '(
     ;; Meta
     ("\\.tags"                   all-the-icons-octicon "tag"               :face all-the-icons-blue)
