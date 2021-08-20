@@ -124,7 +124,6 @@
         ("r"            all-the-icons-fileicon "R"                :face all-the-icons-lblue)
         ("rd"           all-the-icons-fileicon "R"                :face all-the-icons-lblue)
         ("rdx"          all-the-icons-fileicon "R"                :face all-the-icons-lblue)
-        ("rs"           all-the-icons-fileicon "R"                :face all-the-icons-lblue)
         ("rsx"          all-the-icons-fileicon "R"                :face all-the-icons-lblue)
         ;; There seems to be a a bug with this font icon which does not
         ;; let you propertise it without it reverting to being a lower
@@ -268,6 +267,7 @@
         ("gif"          all-the-icons-octicon "file-media"        :face all-the-icons-green)
         ("jpeg"         all-the-icons-octicon "file-media"        :face all-the-icons-dblue)
         ("jpg"          all-the-icons-octicon "file-media"        :face all-the-icons-dblue)
+        ("webp"         all-the-icons-octicon "file-media"        :face all-the-icons-dblue)
         ;; Audio
         ("mp3"          all-the-icons-faicon "volume-up"          :face all-the-icons-dred)
         ("wav"          all-the-icons-faicon "volume-up"          :face all-the-icons-dred)
