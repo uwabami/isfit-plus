@@ -100,6 +100,8 @@
         ("ex"           all-the-icons-alltheicon "elixir"         :face all-the-icons-lpurple  )
         ("exs"          all-the-icons-alltheicon "elixir"         :face all-the-icons-lred  )
         ("java"         all-the-icons-alltheicon "java"           :face all-the-icons-purple)
+        ("ebuild"       all-the-icons-fileicon "gentoo"           :face all-the-icons-cyan)
+        ("eclass"       all-the-icons-fileicon "gentoo"           :face all-the-icons-blue)
         ("go"           all-the-icons-fileicon "go"               :face all-the-icons-blue)
         ("jl"           all-the-icons-fileicon "julia"            :face all-the-icons-purple )
         ("matlab"       all-the-icons-fileicon "matlab"           :face all-the-icons-orange)
