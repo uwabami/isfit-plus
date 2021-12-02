@@ -97,6 +97,7 @@
         ("hrl"          all-the-icons-alltheicon "erlang"         :face all-the-icons-dred  )
         ("eex"          all-the-icons-alltheicon "elixir"         :face all-the-icons-lorange  )
         ("leex"         all-the-icons-alltheicon "elixir"         :face all-the-icons-lorange  )
+        ("heex"         all-the-icons-alltheicon "elixir"         :face all-the-icons-lorange  )
         ("ex"           all-the-icons-alltheicon "elixir"         :face all-the-icons-lpurple  )
         ("exs"          all-the-icons-alltheicon "elixir"         :face all-the-icons-lred  )
         ("java"         all-the-icons-alltheicon "java"           :face all-the-icons-purple)
@@ -145,6 +146,7 @@
         ("cl"           all-the-icons-fileicon "clisp"            :face all-the-icons-lorange)
         ("l"            all-the-icons-fileicon "lisp"             :face all-the-icons-orange)
         ("lisp"         all-the-icons-fileicon "lisp"             :face all-the-icons-orange)
+        ("hy"           all-the-icons-fileicon "hyp"              :face all-the-icons-blue)
         ("el"           all-the-icons-fileicon "elisp"            :face all-the-icons-purple)
         ("clj"          all-the-icons-alltheicon "clojure-line"   :face all-the-icons-blue )
         ("cljc"         all-the-icons-alltheicon "clojure-line"   :face all-the-icons-blue )
@@ -253,6 +255,8 @@
         ;; CUDA
         ("cu"       all-the-icons-fileicon "nvidia"               :face all-the-icons-green)
         ("cuh"      all-the-icons-fileicon "nvidia"               :face all-the-icons-green)
+        ;; Fortran
+        ("f90"      all-the-icons-fileicon "fortran"              :face all-the-icons-purple)
         ;; C#
         ("cs"           all-the-icons-alltheicon "csharp-line"    :face all-the-icons-dblue)
         ("csx"          all-the-icons-alltheicon "csharp-line"    :face all-the-icons-dblue)
@@ -594,8 +598,11 @@
         (nasm-mode                          all-the-icons-fileicon "assembly"         :face all-the-icons-blue )
         (tcl-mode                           all-the-icons-fileicon "tcl"              :face all-the-icons-dred )
         (cuda-mode                          all-the-icons-fileicon "nvidia"           :face all-the-icons-green )
+        (f90-mode                           all-the-icons-fileicon "fortran"          :face all-the-icons-purple)
+        (hy-mode                            all-the-icons-fileicon "hy"               :face all-the-icons-blue)
         (glsl-mode                          all-the-icons-fileicon "vertex-shader"    :face all-the-icons-green )
         (zig-mode                           all-the-icons-fileicon "zig"              :face all-the-icons-orange )
+        (pdf-view--mode                     all-the-icons-octicon  "file-pdf"         :face all-the-icons-dred )
         )
       )
 
