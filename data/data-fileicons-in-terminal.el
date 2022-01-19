@@ -666,7 +666,7 @@
     ("pb"                     . "\xedd9")
     ("pcd"                    . "\xec99")
     ("pegjs"                  . "\xee39")
-    ("perl6"                  . "\xed31")
+    ("raku"                   . "\xed31")
     ("phalcon"                . "\xed0f")
     ("phoenix"                . "\xee24")
     ("php"                    . "\xef8b")

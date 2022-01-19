@@ -3,7 +3,7 @@
 ;; Copyright (C) 2019-2021 Youhei SASAKI<uwabami@gfd-dennou.org>
 ;;
 ;; Original author: Youhei SASAKI<uwabami@gfd-dennou.org>
-;; Version: 20210708
+;; Version: 20220119
 ;; Package-Requires: ((all-the-icons "5.0.0"))
 ;; URL: https://github.com/uwabami/isfit-plus
 ;; Keywords: convenient, lisp
@@ -109,8 +109,8 @@
         ("nix"          all-the-icons-fileicon "nix"              :face all-the-icons-blue)
         ("pl"           all-the-icons-alltheicon "perl"           :face all-the-icons-lorange)
         ("pm"           all-the-icons-alltheicon "perl"           :face all-the-icons-lorange)
-        ("pl6"          all-the-icons-fileicon "perl6"            :face all-the-icons-cyan)
-        ("pm6"          all-the-icons-fileicon "perl6"            :face all-the-icons-pink)
+        ("pl6"          all-the-icons-fileicon "raku"             :face all-the-icons-cyan)
+        ("pm6"          all-the-icons-fileicon "raku"             :face all-the-icons-pink)
         ("pod"          all-the-icons-alltheicon "perldocs"       :face all-the-icons-lgreen)
         ("php"          all-the-icons-fileicon "php"              :face all-the-icons-lsilver)
         ("pony"         all-the-icons-fileicon "pony"             :face all-the-icons-maroon)
@@ -118,8 +118,10 @@
         ("pro"          all-the-icons-alltheicon "prolog"         :face all-the-icons-lmaroon)
         ("proog"        all-the-icons-alltheicon "prolog"         :face all-the-icons-lmaroon)
         ("py"           all-the-icons-alltheicon "python"         :face all-the-icons-dblue)
+        ("idr"          all-the-icons-fileicon "idris"            :face all-the-icons-dorange)
         ("ipynb"        all-the-icons-fileicon "jupyter"          :face all-the-icons-dorange)
-        ("rkt"          all-the-icons-fileicon "racket"           :face all-the-icons-red)
+        ("raku"         all-the-icons-fileicon "raku"             :face all-the-icons-cyan)
+        ("rakumod"      all-the-icons-fileicon "raku"             :face all-the-icons-pink)
         ("gem"          all-the-icons-alltheicon "ruby-alt"       :face all-the-icons-red)
         ("rb"           all-the-icons-octicon "ruby"              :face all-the-icons-lred)
         ("rs"           all-the-icons-alltheicon "rust"           :face all-the-icons-maroon)
@@ -154,6 +156,8 @@
         ("coffee"       all-the-icons-alltheicon "coffeescript"   :face all-the-icons-maroon)
         ("iced"         all-the-icons-alltheicon "coffeescript"   :face all-the-icons-lmaroon)
         ("dart"         all-the-icons-fileicon "dart"             :face all-the-icons-blue )
+        ("rkt"          all-the-icons-fileicon "racket"           :face all-the-icons-red)
+        ("scrbl"        all-the-icons-fileicon "racket"           :face all-the-icons-blue)
         ;; Stylesheeting
         ("css"          all-the-icons-alltheicon "css3"           :face all-the-icons-yellow)
         ("scss"         all-the-icons-alltheicon "sass"           :face all-the-icons-pink)
@@ -192,6 +196,7 @@
         ("js"           all-the-icons-alltheicon "javascript"     :face all-the-icons-yellow)
         ("es"           all-the-icons-alltheicon "javascript"     :face all-the-icons-yellow)
         ("jsx"          all-the-icons-fileicon "jsx-2"            :face all-the-icons-cyan-alt)
+        ("tsx"          all-the-icons-fileicon "tsx"              :face all-the-icons-cyan-alt)
         ("njs"          all-the-icons-alltheicon "nodejs"         :face all-the-icons-lgreen)
         ("vue"          all-the-icons-fileicon "vue"              :face all-the-icons-lgreen)
 
@@ -322,6 +327,7 @@
         ("xlsb"         all-the-icons-fileicon "excel"            :face all-the-icons-dgreen)
         ("xltx"         all-the-icons-fileicon "excel"            :face all-the-icons-dgreen)
         ("xltm"         all-the-icons-fileicon "excel"            :face all-the-icons-dgreen)
+        ("ly"           all-the-icons-faicon   "music"            :face all-the-icons-green)
         ;;
         ("key"          all-the-icons-octicon "key"               :face all-the-icons-lblue)
         ("pem"          all-the-icons-octicon "key"               :face all-the-icons-orange)
@@ -342,8 +348,8 @@
 
         ;; Config
         ("^bower.json$"     all-the-icons-alltheicon "bower"           :face all-the-icons-lorange)
-        ("nginx"            all-the-icons-fileicon "nginx"             :face all-the-icons-dgreen)
-        ("apache"           all-the-icons-alltheicon "apache"          :face all-the-icons-dgreen)
+        ("nginx$"            all-the-icons-fileicon "nginx"             :face all-the-icons-dgreen)
+        ("apache$"           all-the-icons-alltheicon "apache"          :face all-the-icons-dgreen)
         ("^Makefile$"       all-the-icons-fileicon "gnu"               :face all-the-icons-dorange)
         ("^CMakeLists.txt$" all-the-icons-fileicon "cmake"             :face all-the-icons-red)
         ("^CMakeCache.txt$" all-the-icons-fileicon "cmake"             :face all-the-icons-blue)
@@ -398,9 +404,11 @@
         ("^\\*new-tab\\*$"  all-the-icons-material "star"              :face all-the-icons-cyan)
 
         ("^\\."             all-the-icons-octicon "gear"                    )
-        (".?"               all-the-icons-faicon "file-o"              :face all-the-icons-dsilver)
         )
       )
+(defvar all-the-icons-default-file-icon
+  '(all-the-icons-faicon "file-o" :face all-the-icons-dsilver))
+
 (setq all-the-icons-dir-icon-alist
       '(
         ("trash"            all-the-icons-faicon "trash-o" )
@@ -470,6 +478,7 @@
         (slime-repl-mode           all-the-icons-fileicon "clisp"                     :face all-the-icons-orange )
         (org-mode                  all-the-icons-fileicon "org"                       :face all-the-icons-lgreen )
         (typescript-mode           all-the-icons-fileicon "typescript"                :face all-the-icons-blue-alt )
+        (typescript-tsx-mode       all-the-icons-fileicon "typescript"                :face all-the-icons-cyan-alt )
         (js-mode                   all-the-icons-alltheicon "javascript"              :face all-the-icons-yellow )
         (js-jsx-mode               all-the-icons-alltheicon "javascript"              :face all-the-icons-yellow )
         (js2-mode                  all-the-icons-alltheicon "javascript"              :face all-the-icons-yellow )
@@ -603,6 +612,9 @@
         (glsl-mode                          all-the-icons-fileicon "vertex-shader"    :face all-the-icons-green )
         (zig-mode                           all-the-icons-fileicon "zig"              :face all-the-icons-orange )
         (pdf-view--mode                     all-the-icons-octicon  "file-pdf"         :face all-the-icons-dred )
+        (elfeed-search-mode                 all-the-icons-faicon   "rss-square"       :face all-the-icons-orange)
+        (elfeed-show-mode                   all-the-icons-faicon   "rss"              :face all-the-icons-orange)
+        (lilypond-mode                      all-the-icons-faicon   "music"            :face all-the-icons-green)
         )
       )
 
