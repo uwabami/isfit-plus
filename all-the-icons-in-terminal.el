@@ -106,6 +106,7 @@
         ("eclass"       all-the-icons-fileicon "gentoo"           :face all-the-icons-blue)
         ("go"           all-the-icons-fileicon "go"               :face all-the-icons-blue)
         ("jl"           all-the-icons-fileicon "julia"            :face all-the-icons-purple)
+        ("magik"        all-the-icons-fileicon "magic"            :face all-the-icons-orange)
         ("matlab"       all-the-icons-fileicon "matlab"           :face all-the-icons-orange)
         ("nix"          all-the-icons-fileicon "nix"              :face all-the-icons-blue)
         ("pl"           all-the-icons-alltheicon "perl"           :face all-the-icons-lorange)
@@ -616,6 +617,8 @@
         (elfeed-search-mode                 all-the-icons-faicon   "rss-square"       :face all-the-icons-orange)
         (elfeed-show-mode                   all-the-icons-faicon   "rss"              :face all-the-icons-orange)
         (lilypond-mode                      all-the-icons-faicon   "music"            :face all-the-icons-green)
+        (magik-session-mode                 all-the-icons-alltheicon "terminal"       :face all-the-icons-blue)
+        (magik-cb-mode                      all-the-icons-faicon "book"               :face all-the-icons-blue)
         )
       )
 
