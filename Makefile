@@ -88,7 +88,7 @@ powerline:
 logos:
 	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
 	@if [ ! -f $(SRCD)/font-logos.ttf ] ; then\
-	  wget https://github.com/lukas-w/font-logos/raw/v0.11/assets/font-logos.ttf -O $(SRCD)/font-logos.ttf ;\
+	  wget https://github.com/lukas-w/font-logos/raw/v0.17/assets/font-logos.ttf -O $(SRCD)/font-logos.ttf ;\
 	fi
 
 weather:
@@ -109,12 +109,12 @@ file:
 alltheicons:
 	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
 	@if [ ! -f $(SRCD)/all-the-icons.ttf ] ; then\
-	  wget https://github.com/domtronn/all-the-icons.el/raw/52d1f2d36468146c93aaf11399f581401a233306/fonts/all-the-icons.ttf -O $(SRCD)/all-the-icons.ttf ;\
+	  wget https://github.com/domtronn/all-the-icons.el/raw/master/fonts/all-the-icons.ttf -O $(SRCD)/all-the-icons.ttf ;\
 	fi
 
 clean:
 	@rm -f scripts/*.pyc
-	@rm -fr scripts/_pycache_
+	@rm -fr scripts/__pycache__
 
 distclean: clean
 	rm -fr $(SRCD)/*.ttf
