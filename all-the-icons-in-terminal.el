@@ -134,6 +134,7 @@
         ("rd"           all-the-icons-fileicon "R"                :face all-the-icons-lblue)
         ("rdx"          all-the-icons-fileicon "R"                :face all-the-icons-lblue)
         ("rsx"          all-the-icons-fileicon "R"                :face all-the-icons-lblue)
+        ("svelte"       all-the-icons-fileicon "svelte"           :face all-the-icons-red)
         ;; There seems to be a a bug with this font icon which does not
         ;; let you propertise it without it reverting to being a lower
         ;; case phi
@@ -559,6 +560,7 @@
         (scala-mode                         all-the-icons-alltheicon "scala"          :face all-the-icons-red)
         (scheme-mode                        all-the-icons-fileicon   "scheme"         :face all-the-icons-red)
         (swift-mode                         all-the-icons-alltheicon "swift"          :face all-the-icons-green)
+        (svelte-mode                        all-the-icons-fileicon "svelte"           :face all-the-icons-red)
         (c-mode                             all-the-icons-alltheicon "c-line"         :face all-the-icons-blue)
         (c++-mode                           all-the-icons-alltheicon "cplusplus-line" :face all-the-icons-blue)
         (csharp-mode                        all-the-icons-alltheicon "csharp-line"    :face all-the-icons-dblue)
