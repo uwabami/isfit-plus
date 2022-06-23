@@ -135,6 +135,8 @@
         ("rdx"          all-the-icons-fileicon "R"                :face all-the-icons-lblue)
         ("rsx"          all-the-icons-fileicon "R"                :face all-the-icons-lblue)
         ("svelte"       all-the-icons-fileicon "svelte"           :face all-the-icons-red)
+        ("gql"          all-the-icons-fileicon "graphql"          :face all-the-icons-dpink)
+        ("graphql"      all-the-icons-fileicon "graphql"          :face all-the-icons-dpink)
         ;; There seems to be a a bug with this font icon which does not
         ;; let you propertise it without it reverting to being a lower
         ;; case phi
@@ -548,6 +550,7 @@
         (elixir-mode                        all-the-icons-alltheicon "elixir"         :face all-the-icons-lorange)
         (java-mode                          all-the-icons-alltheicon "java"           :face all-the-icons-purple)
         (go-mode                            all-the-icons-fileicon "go"               :face all-the-icons-blue)
+        (graphql-mode                       all-the-icons-fileicon "graphql"          :face all-the-icons-dpink)
         (matlab-mode                        all-the-icons-fileicon "matlab"           :face all-the-icons-orange)
         (perl-mode                          all-the-icons-alltheicon "perl"           :face all-the-icons-lorange)
         (cperl-mode                         all-the-icons-alltheicon "perl"           :face all-the-icons-lorange)
