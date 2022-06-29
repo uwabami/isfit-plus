@@ -542,6 +542,7 @@
         (docker-compose-mode                all-the-icons-fileicon "dockerfile"       :face all-the-icons-lblue)
         (nxml-mode                          all-the-icons-faicon "file-code-o"        :face all-the-icons-lorange)
         (json-mode                          all-the-icons-octicon "settings"          :face all-the-icons-yellow)
+        (jsonian-mode                       all-the-icons-octicon "settings"          :face all-the-icons-yellow)
         (yaml-mode                          all-the-icons-octicon "settings"          :face all-the-icons-dyellow)
         (elisp-byte-code-mode               all-the-icons-octicon "file-binary"       :face all-the-icons-dsilver)
         (archive-mode                       all-the-icons-octicon "file-zip"          :face all-the-icons-lmaroon)
