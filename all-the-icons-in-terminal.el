@@ -279,6 +279,8 @@
         ("fsscript"     all-the-icons-fileicon "fsharp"           :face all-the-icons-blue-alt)
         ;; zig
         ("zig"          all-the-icons-fileicon "zig"              :face all-the-icons-orange)
+        ;;
+        ("odin"         all-the-icons-fileicon "odin"             :face all-the-icons-lblue)
         ;; File Types
         ("ico"          all-the-icons-octicon "file-media"        :face all-the-icons-blue)
         ("png"          all-the-icons-octicon "file-media"        :face all-the-icons-orange)
@@ -354,7 +356,6 @@
         ("^readme"          all-the-icons-octicon "book"                              :face all-the-icons-lcyan)
 
         ;; Config
-        ("^bower.json$"     all-the-icons-alltheicon "bower"                          :face all-the-icons-lorange)
         ("nginx$"            all-the-icons-fileicon "nginx"                           :face all-the-icons-dgreen)
         ("apache$"           all-the-icons-alltheicon "apache"                        :face all-the-icons-dgreen)
         ("^Makefile$"       all-the-icons-fileicon "gnu"                              :face all-the-icons-dorange)
@@ -363,15 +364,9 @@
 
         ("^\\.?Dockerfile"  all-the-icons-fileicon "dockerfile"                       :face all-the-icons-blue)
         ("^Brewfile$"       all-the-icons-faicon "beer"                               :face all-the-icons-lsilver)
-        ("\\.npmignore$"    all-the-icons-fileicon "npm"                              :face all-the-icons-dred)
-        ("^package.json$"   all-the-icons-fileicon "npm"                              :face all-the-icons-red)
-        ("^package.lock.json$" all-the-icons-fileicon "npm"                           :face all-the-icons-dred)
-        ("^yarn\\.lock"     all-the-icons-fileicon "yarn"                             :face all-the-icons-blue-alt)
 
         ;; ;; AWS
         ("^stack.*.json$"   all-the-icons-alltheicon "aws"                            :face all-the-icons-orange)
-
-
         ("^serverless\\.yml$" all-the-icons-faicon "bolt"                             :face all-the-icons-yellow)
 
         ;; lock files
@@ -400,9 +395,18 @@
         ;; Stylesheeting
         ("stylelint"        all-the-icons-fileicon "stylelint"                        :face all-the-icons-lyellow)
         ;; JavaScript
+        ("^package.json$"   all-the-icons-fileicon "npm"                              :face all-the-icons-red)
+        ("^package.lock.json$" all-the-icons-fileicon "npm"                           :face all-the-icons-dred)
+        ("^yarn\\.lock"     all-the-icons-fileicon "yarn"                             :face all-the-icons-blue-alt)
+        ("\\.npmignore$"    all-the-icons-fileicon "npm"                              :face all-the-icons-dred)
+        ("^bower.json$"     all-the-icons-alltheicon "bower"                          :face all-the-icons-lorange)
         ("^gulpfile"        all-the-icons-alltheicon "gulp"                           :face all-the-icons-lred)
         ("^gruntfile"       all-the-icons-alltheicon "grunt"                          :face all-the-icons-lyellow)
         ("^webpack"         all-the-icons-fileicon "webpack"                          :face all-the-icons-lblue)
+
+        ;; Go
+        ("^go.mod$"         all-the-icons-fileicon "config-go"                        :face all-the-icons-blue-alt)
+        ("^go.work$"        all-the-icons-fileicon "config-go"                        :face all-the-icons-blue-alt)
 
         ("bookmark"         all-the-icons-octicon "bookmark"                          :face all-the-icons-lpink)
 
@@ -551,6 +555,8 @@
         (elixir-mode                        all-the-icons-alltheicon "elixir"         :face all-the-icons-lorange)
         (java-mode                          all-the-icons-alltheicon "java"           :face all-the-icons-purple)
         (go-mode                            all-the-icons-fileicon "go"               :face all-the-icons-blue)
+        (go-dot-mod-mode                    all-the-icons-fileicon "config-go"        :face all-the-icons-blue-alt)
+        (go-dot-work-mode                   all-the-icons-fileicon "config-go"        :face all-the-icons-blue-alt)
         (graphql-mode                       all-the-icons-fileicon "graphql"          :face all-the-icons-dpink)
         (matlab-mode                        all-the-icons-fileicon "matlab"           :face all-the-icons-orange)
         (perl-mode                          all-the-icons-alltheicon "perl"           :face all-the-icons-lorange)
@@ -622,6 +628,7 @@
         (hy-mode                            all-the-icons-fileicon "hy"               :face all-the-icons-blue)
         (glsl-mode                          all-the-icons-fileicon "vertex-shader"    :face all-the-icons-green)
         (zig-mode                           all-the-icons-fileicon "zig"              :face all-the-icons-orange)
+        (odin-mode                          all-the-icons-fileicon "odin"             :face all-the-icons-lblue)
         (pdf-view--mode                     all-the-icons-octicon  "file-pdf"         :face all-the-icons-dred)
         (elfeed-search-mode                 all-the-icons-faicon   "rss-square"       :face all-the-icons-orange)
         (elfeed-show-mode                   all-the-icons-faicon   "rss"              :face all-the-icons-orange)
