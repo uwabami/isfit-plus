@@ -361,8 +361,13 @@
         ("^Makefile$"       all-the-icons-fileicon "gnu"                              :face all-the-icons-dorange)
         ("^CMakeLists.txt$" all-the-icons-fileicon "cmake"                            :face all-the-icons-red)
         ("^CMakeCache.txt$" all-the-icons-fileicon "cmake"                            :face all-the-icons-blue)
+        ("^meson.build$"    all-the-icons-fileicon "meson"                            :face all-the-icons-purple)
+        ("^meson_options.txt$" all-the-icons-fileicon "meson"                         :face all-the-icons-purple)
 
+        ;; Docker
         ("^\\.?Dockerfile"  all-the-icons-fileicon "dockerfile"                       :face all-the-icons-blue)
+
+        ;; Homebrew
         ("^Brewfile$"       all-the-icons-faicon "beer"                               :face all-the-icons-lsilver)
 
         ;; ;; AWS
@@ -375,6 +380,7 @@
         ;; Source Codes
         ("^mix.lock$"       all-the-icons-alltheicon "elixir"                         :face all-the-icons-lyellow)
 
+        ;; Ruby
         ("^Gemfile\\(\\.lock\\)?$" all-the-icons-alltheicon "ruby-alt"                :face all-the-icons-red)
         ("_?test\\.rb$"        all-the-icons-fileicon "test-ruby"                     :face all-the-icons-red)
         ("_?test_helper\\.rb$" all-the-icons-fileicon "test-ruby"                     :face all-the-icons-dred)
@@ -394,6 +400,7 @@
 
         ;; Stylesheeting
         ("stylelint"        all-the-icons-fileicon "stylelint"                        :face all-the-icons-lyellow)
+
         ;; JavaScript
         ("^package.json$"   all-the-icons-fileicon "npm"                              :face all-the-icons-red)
         ("^package.lock.json$" all-the-icons-fileicon "npm"                           :face all-the-icons-dred)
@@ -408,6 +415,7 @@
         ("^go.mod$"         all-the-icons-fileicon "config-go"                        :face all-the-icons-blue-alt)
         ("^go.work$"        all-the-icons-fileicon "config-go"                        :face all-the-icons-blue-alt)
 
+        ;; Emacs
         ("bookmark"         all-the-icons-octicon "bookmark"                          :face all-the-icons-lpink)
 
         ("^\\*scratch\\*$"  all-the-icons-faicon "sticky-note"                        :face all-the-icons-lyellow)
@@ -635,6 +643,7 @@
         (lilypond-mode                      all-the-icons-faicon   "music"            :face all-the-icons-green)
         (magik-session-mode                 all-the-icons-alltheicon "terminal"       :face all-the-icons-blue)
         (magik-cb-mode                      all-the-icons-faicon "book"               :face all-the-icons-blue)
+        (meson-mode                         all-the-icons-fileicon "meson"            :face all-the-icons-purple)
         )
       )
 
