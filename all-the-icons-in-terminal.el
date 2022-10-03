@@ -83,6 +83,7 @@
         ;; ?
         ("pkg"          all-the-icons-octicon "package"           :face all-the-icons-dsilver)
         ("rpm"          all-the-icons-octicon "package"           :face all-the-icons-dsilver)
+        ("pkgbuild"     all-the-icons-octicon "package"           :face all-the-icons-dsilver)
         ("elc"          all-the-icons-octicon "file-binary"       :face all-the-icons-dsilver)
         ("gz"           all-the-icons-octicon "file-binary"       :face all-the-icons-lmaroon)
         ("zip"          all-the-icons-octicon "file-zip"          :face all-the-icons-lmaroon)
@@ -489,6 +490,7 @@
         (emacs-lisp-mode           all-the-icons-fileicon "elisp"                     :face all-the-icons-purple)
         (circe-server-mode         all-the-icons-faicon "commenting-o")
         (circe-channel-mode        all-the-icons-faicon "commenting-o")
+        (circe-query-mode          all-the-icons-faicon "commenting-o")
         (crystal-mode              all-the-icons-fileicon "crystal"                   :face all-the-icons-yellow)
         (erc-mode                  all-the-icons-faicon "commenting-o")
         (inferior-emacs-lisp-mode  all-the-icons-fileicon "elisp"                     :face all-the-icons-lblue)
@@ -527,6 +529,7 @@
         (mu4e-headers-mode         all-the-icons-octicon "mail")
         (mu4e-main-mode            all-the-icons-octicon "mail")
         (mu4e-view-mode            all-the-icons-octicon "mail-read")
+        (sieve-mode                all-the-icons-octicon "mail")
         (package-menu-mode         all-the-icons-faicon "archive"                     :face all-the-icons-silver)
         (paradox-menu-mode         all-the-icons-faicon "archive"                     :face all-the-icons-silver)
         (Custom-mode               all-the-icons-octicon "settings")
@@ -644,6 +647,7 @@
         (magik-session-mode                 all-the-icons-alltheicon "terminal"       :face all-the-icons-blue)
         (magik-cb-mode                      all-the-icons-faicon "book"               :face all-the-icons-blue)
         (meson-mode                         all-the-icons-fileicon "meson"            :face all-the-icons-purple)
+        (man-common                         all-the-icons-fileicon "man-page"         :face all-the-icons-blue)
         )
       )
 
