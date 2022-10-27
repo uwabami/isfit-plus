@@ -3,7 +3,7 @@
 ;; Copyright (C) 2019-2021 Youhei SASAKI<uwabami@gfd-dennou.org>
 ;;
 ;; Original author: Youhei SASAKI<uwabami@gfd-dennou.org>
-;; Version: 20220119
+;; Version: 20221027
 ;; Package-Requires: ((all-the-icons "5.0.0"))
 ;; URL: https://github.com/uwabami/isfit-plus
 ;; Keywords: convenient, lisp
