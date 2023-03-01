@@ -90,6 +90,7 @@ def build(version):
     # linegap is for gap between lines.  The `hhea_` version is for macOS.
     dest.os2_typolinegap = 0
     dest.hhea_linegap = 0
+
     dest.generate("isfit-plus.ttf")
     print("---- adding icon fonts ----")
     if concurrent_execute(

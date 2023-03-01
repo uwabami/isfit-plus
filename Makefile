@@ -21,11 +21,14 @@ download: \
 	md \
 	mdg \
 	oct \
-	powerline \
 	logos \
 	weather \
 	powerline \
-	alltheicons
+	powerline_extra \
+	powersymbols \
+	pomicon \
+	alltheicons \
+	codicon
 
 set-ui_custom:
 	@[ -d $(SRCD) ] || mkdir -p $(SRCD)
@@ -80,6 +83,13 @@ oct:
 
 powerline:
 	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
+	@if [ ! -f $(SRCD)/PowerlineSymbols.otf ] ; then\
+	  echo "Download Powerline Symbols" ;\
+	  wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf -O $(SRCD)/PowerlineSymbols.otf ;\
+	fi
+
+powerline_extra:
+	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
 	@if [ ! -f $(SRCD)/PowerlineExtraSymbols.otf ] ; then\
 	  echo "Download Powerline Extra Symbols" ;\
 	  wget https://github.com/ryanoasis/powerline-extra-symbols/raw/90b84948574773f8a2f08bcd26718f7c158f7a41/PowerlineExtraSymbols.otf -O $(SRCD)/PowerlineExtraSymbols.otf ;\
@@ -110,6 +120,24 @@ alltheicons:
 	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
 	@if [ ! -f $(SRCD)/all-the-icons.ttf ] ; then\
 	  wget https://github.com/domtronn/all-the-icons.el/raw/master/fonts/all-the-icons.ttf -O $(SRCD)/all-the-icons.ttf ;\
+	fi
+
+codicon:
+	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
+	@if [ ! -f $(SRCD)/codicon.ttf ] ; then\
+	  wget https://github.com/microsoft/vscode-codicons/raw/main/dist/codicon.ttf -O $(SRCD)/codicon.ttf ;\
+	fi
+
+pomicon:
+	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
+	@if [ ! -f $(SRCD)/Pomicons.ttf ] ; then\
+	  wget https://github.com/gabrielelana/pomicons/raw/master/fonts/Pomicons.otf -O $(SRCD)/Pomicons.ttf ;\
+	fi
+
+powersymbols:
+	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
+	@if [ ! -f $(SRCD)/Unicode_IEC_symbol_font.otf ] ; then\
+	  wget https://github.com/jloughry/Unicode/raw/master/Unicode_IEC_symbol_font.otf -O $(SRCD)/Unicode_IEC_symbol_font.otf ;\
 	fi
 
 clean:
