@@ -28,7 +28,7 @@ nerdsymbol:
 fileicons:
 	@[ -d $(SRCD) ] ||  mkdir -p $(SRCD)
 	@if [ ! -f $(SRCD)/file-icons.ttf ] ; then\
-	  wget https://github.com/file-icons/atom/raw/v2.1.7/fonts/file-icons.woff2 ;\
+	  wget https://github.com/file-icons/atom/raw/master/fonts/file-icons.woff2 ;\
 	  woff2_decompress file-icons.woff2 ;\
 	  mv file-icons.ttf $(SRCD)/ ;\
 	  rm -f file-icons.woff2 ;\
@@ -42,7 +42,7 @@ alltheicons:
 
 mdg:
 	@if [ ! -f $(SRCD)/MaterialIcons-Regular.ttf ] ; then\
-	  wget https://github.com/google/material-design-icons/raw/4.0.0/font/MaterialIcons-Regular.ttf -O $(SRCD)/MaterialIcons-Regular.ttf ;\
+	  wget https://github.com/google/material-design-icons/raw/master/font/MaterialIcons-Regular.ttf -O $(SRCD)/MaterialIcons-Regular.ttf ;\
 	fi
 
 clean:
