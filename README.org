@@ -2,14 +2,12 @@
 * Icon Symbols Font In Terminal plus
   #+html: <a href="screenshot.png"><img src="screenshot.webp" alt="ScreenShot"></a>
 ** Overview
-   The [[https://github.com/ryanoasis/nerd-fonts/][Nerd fonts]], icons font collection provides nice fonts,
-   and also, the [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] provides great feature.
-   But some icon fonts use CJK Compatibility Ideographs area, not Private
-   Use Area. @see https://github.com/ryanoasis/nerd-fonts/issues/365.
+
+   The fonts "isfit+" is a font that combines [[https://github.com/ryanoasis/nerd-fonts][Nerd fonts]] icons, [[https://github.com/file-icons/icons][file-icons]], [[https://github.com/domtronn/all-the-icons.el][all-the-icons.ttf]], [[https://github.com/google/material-design-icons][Google Material Design Icons]].
 
    In this repository, provides
    - Modified version's icon fonts, named [[https://github.com/uwabami/isfit-plus/raw/master/dists/isfit-plus.ttf][isfit+]].
-     - Following SIL OFL v1.1, generated fonts renamed *isfit+*, Icon Symbols Font In Terminal Plus.
+     - Following SIL OFL v1.1, generated fonts renamed *isfit+*: Icon Symbols Font In Terminal Plus.
    - Dataset of [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]] to use isfit+.
 ** Installation
    Get generated [[https://github.com/uwabami/isfit-plus/raw/master/dists/isfit-plus.ttf][fonts]] and install it.
@@ -26,60 +24,51 @@
   )
    #+END_SRC
 ** Font sources
-   |--------------------------------+---------------------+-----------------------------|
-   | Name                           | Version             | License                     |
-   |--------------------------------+---------------------+-----------------------------|
-   | [[https://github.com/ryanoasis/nerd-fonts/raw/master/src/glyphs/original-source.otf][Nerd: Seti-UI + Custom]]         | v2.0.0              | [[https://github.com/ryanoasis/nerd-fonts/blob/master/LICENSE][MIT/X11]]                     |
-   | [[https://github.com/vorillaz/devicons/tree/b574cde/][Devicons]]                       | 2015/05/02(b574cde) | MIT/X11                     |
-   | [[https://fontawesome.com/v4.7.0/][FontAwesome]]                    | 4.7                 | [[https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL][SIL OFL v1.1]]                |
-   | [[https://github.com/Templarian/MaterialDesign-Webfont][Material Design Icons]]          | v4.7.95             | [[https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL][SIL OFL v1.1]] and [[https://www.apache.org/licenses/LICENSE-2.0][Apache 2.0]] |
-   | [[https://github.com/file-icons/icons/tree/de534d3][file-icons]]                     | v2.1.4              | [[https://github.com/file-icons/atom/blob/v2.1.46/LICENSE.md][MIT/X11]]                     |
-   | [[https://unicodepowersymbol.com/][Unicode PowerSymbol]]            | 2015/02/28(4c79c6a) | [[https://github.com/jloughry/Unicode/blob/master/LICENSE.txt][MIT/X11]]                     |
-   | [[https://github.com/primer/octicons][Octicons]]                       | v4.4.0              | [[https://github.com/primer/octicons/blob/v4.4.0/LICENSE][MIT/X11]]                     |
-   | [[https://github.com/Lukas-W/font-logos][font-logos]]                     | v0.17               | [[https://github.com/lukas-w/font-logos/blob/master/LICENSE][Unlicense]]                   |
-   | [[https://github.com/domtronn/all-the-icons.el][all-the-icons.ttf]]              | 3.2.0               | [[https://github.com/domtronn/all-the-icons.el/blob/master/LICENSE][MIT/X11]]                     |
-   | [[https://github.com/erikflowers/weather-icons/][Weather Icons]]                  | v2.0.10             | [[https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL][SIL OFL v1.1]]                |
-   | [[https://github.com/google/material-design-icons][Material Design Icon]] by Google | v4.0.0              | [[https://github.com/google/material-design-icons/blob/master/LICENSE][Apache 2.0]]                  |
-   | [[https://github.com/gabrielelana/pomicons][Pomicons]]                       | 2014/05/06(a28c77e) | [[https://github.com/gabrielelana/pomicons/blob/master/LICENSE][SIL OFL v1.1]]                |
-   |--------------------------------+---------------------+-----------------------------|
-** Mapping [0/1]
-   @see https://github.com/ryanoasis/nerd-fonts/issues/365
-   Following plan 2 of above issue,
-   *the difference form Nerd fonts is the range of Material icon's*.
-   @see [[file:mapping.org][mapping]] for details.
-   |-------------------------+---------------+-------------|
-   | Font Name               | source        | generated   |
-   |-------------------------+---------------+-------------|
-   | Seti-UI + Custom        | E4FA-E52E     | E5FA-E62E   |
-   | Devicons                | E600-E6C5     | E700-E7C5   |
-   | Powerline Symbols       | E0A0-E0B3     | ←          |
-   | Powerline Extra Symbols | E0B4-E0D4     | ←          |
-   | Pomicons                | E000-E00A     | ←          |
-   | Font Awesome            | F000-F2E0     | ←          |
-   | Font Awesome Extension  | E000-E0A9     | E200-E2A9   |
-   | Material                | _F0001-F0400_ | *F500-F8FF* |
-   |                         | _F0401-F0848_ | *E800-EC47* |
-   | Font Logos (Font Linux) | F100-F11C     | F300-F31C   |
-   | Power Symbols           | 23FB-2B58     | ←          |
-   | Octicons                | 2665-2665     | ←          |
-   |                         | 26A1-26A1     | ←          |
-   |                         | F000-F105     | F400-F438   |
-   |                         | F27C-F27C     | F4A9-F4A9   |
-   | Weather Icons           | F000-F0EB     | E300-E3EB   |
-   |-------------------------+---------------+-------------|
-   | File Icons              | many glpyh    | *EC48-EFD9* |
-   | All The Icons           | E903-E940     | *E0E0-E11D* |
-   | Material by Google      | E000-E0E8     | *E000-E09F* |
-   |                         | E0E9-E0ED     | *E0A4-E0A8* |
-   |                         | E0EE-E31D     | *E11F-E1FF* |
-   |                         | E31E-E3D3     | *E2AA-E2FF* |
-   |                         | E3D4-E8FA     | *E3EC-E5F9* |
-   |                         | E8FB-EA14     | *E62F-E6FF* |
-   |                         | EA15-EA4F     | *E7C6-E7FF* |
-   |                         | EA50-EB1C     | *EFDA-EFFF* |
-   |                         | EB1D-EF3D     | *F2E1-F2FF* |
-   |                         | EF3E-F23B     | *F320-F3FF* |
-   |-------------------------+---------------+-------------|
+   |---------------------------------+---------+------------|
+   | Name                            | Version | License    |
+   |---------------------------------+---------+------------|
+   | Nerd: [[https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/NerdFontsSymbolsOnly][Symbols Only]]              | v3.0.2  | [[https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/NerdFontsSymbolsOnly/LICENSE][MIT/X11]]    |
+   | [[https://github.com/file-icons/atom/releases/tag/v2.1.47][file-icons]]                      | v2.1.7  | [[https://github.com/file-icons/atom/blob/v2.1.7/LICENSE.md][MIT/X11]]    |
+   | [[https://github.com/domtronn/all-the-icons.el][all-the-icons.ttf]]               | 3.2.0   | [[https://github.com/domtronn/all-the-icons.el/blob/master/LICENSE][MIT/X11]]    |
+   | [[https://github.com/google/material-design-icons][Material Design icons by Google]] | v4.0.0  | [[https://github.com/google/material-design-icons/blob/master/LICENSE][Apache-2.0]] |
+   |---------------------------------+---------+------------|
+** Mapping
+   @see https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points.
+   Nerd icon's code points are not changed,
+   just add [[https://github.com/file-icons/icons/tree/de534d3][file-icons]], [[https://github.com/domtronn/all-the-icons.el][all-the-icons.ttf]], [[https://github.com/google/material-design-icons][Google Material Design Icons]].
+   |--------------------------------+-----------------|
+   | Font Name                      | generated       |
+   |--------------------------------+-----------------|
+   | IEC Power Symbols              | 23FB -  23FE    |
+   | Octicons                       | 2665            |
+   | Octicons                       | 26A1            |
+   | IEC Power Symbols              | 2B58            |
+   | Pomicons                       | E000 -  E00A    |
+   | Powerline                      | E0A0 -  E0A2    |
+   | Powerline Extra                | E0A3            |
+   | Powerline                      | E0B0 -  E0B3    |
+   | Powerline Extra                | E0B4 -  E0C8    |
+   | Powerline Extra                | E0CA            |
+   | Powerline Extra                | E0CC -  E0D4    |
+   |--------------------------------+-----------------|
+   | *All The Icons*                | *E0E0 - E11D*   |
+   |--------------------------------+-----------------|
+   | Font Awesome Extension         | E200 -  E2A9    |
+   | Weather Icons                  | E300 -  E3E3    |
+   | Seti-UI + Custom               | E5FA -  E6A6    |
+   | Devicons                       | E700 -  E7C5    |
+   | Codicons                       | EA60 -  EBEB    |
+   |--------------------------------+-----------------|
+   | *File Icons*                   | *EC48 - EFE9*   |
+   |--------------------------------+-----------------|
+   | Font Awesome                   | F000 -  F2E0    |
+   | Font Logos                     | F300 -  F32F    |
+   | Octicons                       | F400 -  F532    |
+   | Material Design                | F500 -  FD46    |
+   | Material Design                | F0001 - F1AF0   |
+   |--------------------------------+-----------------|
+   | *Google Material Design icons* | *F2000 - F28BB* |
+   |--------------------------------+-----------------|
 ** License, Important Notice/Disclaimer
 
    All Code: MIT/X11
@@ -92,7 +81,3 @@
    If you find any bugs, please report me. *Do not send upstream*.
 
    Enjoy!
-** Ref.
-   - [[https://github.com/sebastiencs/icons-in-terminal][icons-in-terminal]]
-   - [[https://github.com/domtronn/all-the-icons.el][all-the-icons.el]]
-   - [[https://github.com/ryanoasis/nerd-fonts/][Nerd fonts: Iconic font aggregator, collection, & patcher.]]

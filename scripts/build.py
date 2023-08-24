@@ -13,7 +13,6 @@ FONTFORGE = "FontForge 2.0"
 ASCENT = 1650
 DESCENT = 398
 ENCODING = "UnicodeFull"
-# ENCODING = "ISO10646-1"
 UNDERLINE_POS = -250
 UNDERLINE_HEIGHT = 100
 STYLE_PROPERTY = {
@@ -26,7 +25,6 @@ COPYRIGHT = """Copyright (c) 2019-2020 Youhei SASAKI <uwabami@gfd-dennou.org>
 SIL Open Font License Version 1.1 (http://scripts.sil.org/ofl)"""  # noqa
 
 def build(version):
-    print("---- create empty template fonts ----")
     prop = STYLE_PROPERTY
     dest = fontforge.font()
     dest.ascent = ASCENT
@@ -91,6 +89,10 @@ def build(version):
     dest.os2_typolinegap = 0
     dest.hhea_linegap = 0
 
+    dest.mergeFonts("glyphs/SymbolsNerdFont-Regular.ttf")
+    dest.selection.all()
+    dest.autoHint()
+    dest.autoInstr()
     dest.generate("isfit-plus.ttf")
     print("---- adding icon fonts ----")
     if concurrent_execute(
