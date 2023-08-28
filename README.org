@@ -36,6 +36,7 @@
    @see https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points.
    Nerd icon's code points are not changed,
    just add [[https://github.com/file-icons/icons/tree/de534d3][file-icons]], [[https://github.com/domtronn/all-the-icons.el][all-the-icons.ttf]], [[https://github.com/google/material-design-icons][Google Material Design Icons]].
+   @see [[file:mapping.org][mapping.org]] for details.
    |--------------------------------+-----------------|
    | Font Name                      | generated       |
    |--------------------------------+-----------------|
