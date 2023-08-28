@@ -1,4 +1,4 @@
-(defvar all-the-icons-in-terminal-data/material-icons-alist
+(defvar all-the-icons-in-terminal-data/material-icon-alist
   '(
     ("error"                                         . "\xf2000")
     ("error_outline"                                 . "\xf2001")
