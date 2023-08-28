@@ -1082,4 +1082,5 @@
     ("zorinos"                    . "\xeec9")
     ("zork"                       . "\xec67")
     )
-  (provide 'data-fileicons-in-terminal)
+  )
+(provide 'data-fileicons-in-terminal)

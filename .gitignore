@@ -3,6 +3,8 @@
 
 # Packaging
 .cask
+*-autoloads.el
+*-pkg.el
 
 # data
 glyphs/*.ttf
