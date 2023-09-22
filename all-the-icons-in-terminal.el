@@ -54,7 +54,7 @@
 ;;
 
 ;; override icons alist
-(defvar             all-the-icons-extension-icon-alist
+(defvar all-the-icons-in-terminal-extension-icon-alist
   '(
     ("fish"         all-the-icons-alltheicon "terminal"       :face all-the-icons-lpink)
     ("zsh"          all-the-icons-alltheicon "terminal"       :face all-the-icons-lcyan)
@@ -355,7 +355,10 @@
     ("gpg"          all-the-icons-octicon "key"               :face all-the-icons-lblue)
     ("cache"        all-the-icons-octicon "database"          :face all-the-icons-green)))
 
-(defvar all-the-icons-regexp-icon-alist
+(setq all-the-icons-extension-icon-alist
+      all-the-icons-in-terminal-extension-icon-alist)
+
+(defvar all-the-icons-in-terminal-regexp-icon-alist
   '(
     ;;
     ("^TAGS$"           all-the-icons-octicon "tag"                :face all-the-icons-blue)
@@ -434,11 +437,16 @@
 
     ("^\\."             all-the-icons-octicon "gear")
     ))
+(setq all-the-icons-regexp-icon-alist
+      all-the-icons-in-terminal-regexp-icon-alist)
 
-(defvar all-the-icons-default-file-icon
+(defvar all-the-icons-in-terminal-default-file-icon
   '(all-the-icons-faicon "file-o" :face all-the-icons-dsilver))
 
-(defvar all-the-icons-dir-icon-alist
+(setq all-the-icons-default-file-icon
+      all-the-icons-in-terminal-default-file-icon)
+
+(defvar all-the-icons-in-terminal-dir-icon-alist
   '(
     ("trash"            all-the-icons-faicon "trash-o")
     ("dropbox"          all-the-icons-faicon "dropbox")
@@ -458,7 +466,10 @@
     (".?"               all-the-icons-octicon "file-directory")
     ))
 
-(defvar all-the-icons-weather-icon-alist
+(setq all-the-icons-dir-icon-alist
+      all-the-icons-in-terminal-dir-icon-alist)
+
+(defvar all-the-icons-in-terminal-weather-icon-alist
   '(
     ("tornado"               all-the-icons-wicon "tornado")
     ("hurricane"             all-the-icons-wicon "hurricane")
@@ -492,7 +503,10 @@
     ("not.*available"        all-the-icons-wicon "na")
     ))
 
-(defvar all-the-icons-mode-icon-alist
+(setq all-the-icons-weather-icon-alist
+      all-the-icons-in-terminal-weather-icon-alist)
+
+(defvar all-the-icons-in-terminal-mode-icon-alist
   '(
     (emacs-lisp-mode           all-the-icons-fileicon "elisp"                     :face all-the-icons-purple)
     (circe-server-mode         all-the-icons-faicon "commenting-o")
@@ -686,7 +700,8 @@
     (magik-cb-mode                      all-the-icons-faicon "book"               :face all-the-icons-blue)
     (meson-mode                         all-the-icons-fileicon "meson"            :face all-the-icons-purple)
     (man-common                         all-the-icons-fileicon "man-page"         :face all-the-icons-blue)))
-
+(setq all-the-icons-mode-icon-alist
+      all-the-icons-in-terminal-mode-icon-alist)
 
 (provide 'all-the-icons-in-terminal)
 ;;; all-the-icons-in-terminal.el ends here
