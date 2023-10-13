@@ -1,4 +1,7 @@
 #+startup: content
+
+*Important Notice 2023-10-13: This repository will not be updated in the future.*
+
 * Icon Symbols Font In Terminal plus
   #+html: <a href="screenshot.png"><img src="screenshot.webp" alt="ScreenShot"></a>
 ** Overview
